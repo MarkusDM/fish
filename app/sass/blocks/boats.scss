@@ -1,0 +1,56 @@
+.boats {
+    margin-bottom: 14.6rem;
+    .title {
+        margin-bottom: 7.6rem;
+        padding-left: 40rem;
+    }
+    .container {
+        width: 100%;
+    }
+
+    &__swiper {
+        width: 100%;
+        overflow: hidden;
+        height: 88.7rem;
+    }
+
+    &__slide {
+        min-width: fit-content;
+        max-width: fit-content;
+        max-height: 38.9rem;
+        margin-top: 0!important;
+        margin-bottom: 4.8rem;
+    }
+
+  
+    
+
+    &__image {
+        min-width: 73rem;
+        height: 38.9rem;
+        img {
+            min-width: 100%;
+            height: 100%;
+            object-fit: cover;
+            
+        }
+    }
+
+
+    &__text {
+        padding-top: 7.2rem;
+        margin: 0 auto;
+        width: 111.6rem;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 156%;
+        letter-spacing: 0.02em;
+        color: #98989B;
+        column-width: 48%;
+        column-count: 2;
+        column-gap: 4%;
+        margin-bottom: 4rem;
+
+    }
+}

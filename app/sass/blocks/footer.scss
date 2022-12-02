@@ -1,0 +1,232 @@
+.footer {
+    background-image: url(../img/footer/footer1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 11.3rem;
+    padding-bottom: 7.3rem;
+    position: relative;
+    
+    &::after {
+        position: absolute;
+        content:'';
+        width: 100%;
+        height: 100%;
+        top: 0;
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(25px);
+    }
+
+    .container {
+        width: 112.2rem;
+        position: relative;
+        z-index: 2;
+    }
+
+    &__logo {
+        display: block;
+        width: 31.3rem;
+        height: 4.3rem;
+        margin-bottom: 6.9rem;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 5rem;
+        border-bottom: 1.5px solid rgba(255, 255, 255, 0.2);
+    }
+
+    &__item {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.6rem;
+        line-height: 1.9rem;
+        margin-bottom: 5.3rem;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+
+    &__item:last-child {
+        margin-bottom: 0;
+    }
+
+    &__top-center {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__top-center-title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.6rem;
+        line-height: 1.9rem;
+        margin-bottom: 6.8rem;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+
+    &__top-center-phone {
+        display: block;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 156%;
+        letter-spacing: 0.04em;
+        color: #FFFFFF;
+        margin-bottom: 6.8rem;
+    }
+
+    &__top-center-email {
+        display: block;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 156%;
+        letter-spacing: 0.04em;
+        color: #FFFFFF;
+        margin-bottom: 7.1rem;
+    }
+
+    &__top-socials {
+        display: flex;
+
+        a {
+            width: 3.1rem;
+            height: 3.1rem;
+            margin-right: 3.5rem;
+        }
+
+        a:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__top-left {
+        width: 30.1rem;
+    }
+
+    &__top-left-title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.6rem;
+        line-height: 1.9rem;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+        color: #FFFFFF;
+
+    }
+
+    &__top-left-text {
+        display: block;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 156%;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+        margin-bottom: 4rem;
+    }
+    &__top-left-form {
+        input {
+            padding-bottom: 1.1rem;
+            width: 100%;
+            border: none;
+            background: none;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 1.6rem;
+            line-height: 1.9rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            border-bottom: 1.5px solid #C9C8D0;
+            color: rgba(255, 255, 255, 0.5);
+            margin-bottom: 4rem;
+        }
+
+        input::placeholder {
+            color: rgba(255, 255, 255, 0.5);
+        }
+    }
+
+    &__top-left-btn {
+        margin-top: 1rem;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.6rem;
+        line-height: 1.9rem;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        display: block;
+        padding-bottom: 1rem;
+        color: #FFFFFF;
+        border-bottom: 1.5px solid #FFFFFF;
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 5rem;
+    }
+
+    &__bottom-society {
+        width: 22.2rem;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 156% ;
+        letter-spacing: 0.04em;
+        color: #FFFFFF;
+
+        p {
+            margin-bottom: 3.6rem;
+        }
+    }
+
+    &__bottom-requisites {
+        width: 18.4rem;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height:  156%;
+        letter-spacing: 0.04em;
+        color: #FFFFFF;
+
+        p {
+            margin-bottom: 3.6rem;
+        }
+
+        a {
+            display: block;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.6rem;
+            line-height: 156%;
+            letter-spacing: 0.04em;
+            text-decoration-line: underline;
+            color: #FFFFFF;
+        }
+    }
+
+    &__bottom-address {
+        width: 30.4rem;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height:  156%;
+        letter-spacing: 0.02em;
+        
+        color: #FFFFFF;
+
+        span {
+            display: block;
+            margin-bottom: 1.1rem;
+        }
+    }
+}

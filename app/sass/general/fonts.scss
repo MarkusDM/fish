@@ -1,0 +1,198 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url('Gilroy-Regular.eot');
+    src: local('Gilroy Regular'), local('Gilroy-Regular'),
+        url('../fonts/Gilroy-Regular.eot') format('embedded-opentype'),
+        url('../fonts/Gilroy-Regular.woff2') format('woff2'),
+        url('../fonts/Gilroy-Regular.woff') format('woff'),
+        url('../fonts/Gilroy-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('Gilroy-Bold.eot');
+    src: local('Gilroy Bold'), local('Gilroy-Bold'),
+        url('../fonts/Gilroy-Bold.eot') format('embedded-opentype'),
+        url('../fonts/Gilroy-Bold.woff2') format('woff2'),
+        url('../fonts/Gilroy-Bold.woff') format('woff'),
+        url('../fonts/Gilroy-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('Gilroy-Black.eot');
+    src: local('Gilroy Black'), local('Gilroy-Black'),
+        url('../fonts/Gilroy-Black.eot') format('embedded-opentype'),
+        url('../fonts/Gilroy-Black.woff2') format('woff2'),
+        url('../fonts/Gilroy-Black.woff') format('woff'),
+        url('../fonts/Gilroy-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('Gilroy-Light.eot');
+    src: local('Gilroy Light'), local('Gilroy-Light'),
+        url('../fonts/Gilroy-Light.eot') format('embedded-opentype'),
+        url('../fonts/Gilroy-Light.woff2') format('woff2'),
+        url('../fonts/Gilroy-Light.woff') format('woff'),
+        url('../fonts/Gilroy-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('Gilroy-Semibold.eot');
+    src: local('Gilroy Semibold'), local('Gilroy-Semibold'),
+        url('../fonts/Gilroy-Semibold.eot') format('embedded-opentype'),
+        url('../fonts/Gilroy-Semibold.woff2') format('woff2'),
+        url('../fonts/Gilroy-Semibold.woff') format('woff'),
+        url('../fonts/Gilroy-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('Gilroy-Medium.eot');
+    src: local('Gilroy Medium'), local('Gilroy-Medium'),
+        url('../fonts/Gilroy-Medium.eot') format('embedded-opentype'),
+        url('../fonts/Gilroy-Medium.woff2') format('woff2'),
+        url('../fonts/Gilroy-Medium.woff') format('woff'),
+        url('../fonts/Gilroy-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('Gilroy-Extrabold.eot');
+    src: local('Gilroy Extrabold'), local('Gilroy-Extrabold'),
+        url('../fonts/Gilroy-Extrabold.eot') format('embedded-opentype'),
+        url('../fonts/Gilroy-Extrabold.woff2') format('woff2'),
+        url('../fonts/Gilroy-Extrabold.woff') format('woff'),
+        url('../fonts/Gilroy-Extrabold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('Gilroy-Heavy.eot');
+    src: local('Gilroy Heavy'), local('Gilroy-Heavy'),
+        url('../fonts/Gilroy-Heavy.eot') format('embedded-opentype'),
+        url('../fonts/Gilroy-Heavy.woff2') format('woff2'),
+        url('../fonts/Gilroy-Heavy.woff') format('woff'),
+        url('../fonts/Gilroy-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+
+// 
+
+
+@font-face {
+    font-family: 'Akrobat';
+    src: url('Akrobat-Light.eot');
+    src: local('Akrobat Light'), local('Akrobat-Light'),
+        url('../fonts/Akrobat-Light.eot') format('embedded-opentype'),
+        url('../fonts/Akrobat-Light.woff2') format('woff2'),
+        url('../fonts/Akrobat-Light.woff') format('woff'),
+        url('../fonts/Akrobat-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Akrobat';
+    src: url('Akrobat-Regular.eot');
+    src: local('Akrobat Regular'), local('Akrobat-Regular'),
+        url('../fonts/Akrobat-Regular.eot') format('embedded-opentype'),
+        url('../fonts/Akrobat-Regular.woff2') format('woff2'),
+        url('../fonts/Akrobat-Regular.woff') format('woff'),
+        url('../fonts/Akrobat-Regular.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Akrobat';
+    src: url('Akrobat-ExtraLight.eot');
+    src: local('Akrobat ExtraLight'), local('Akrobat-ExtraLight'),
+        url('../fonts/Akrobat-ExtraLight.eot') format('embedded-opentype'),
+        url('../fonts/Akrobat-ExtraLight.woff2') format('woff2'),
+        url('../fonts/Akrobat-ExtraLight.woff') format('woff'),
+        url('../fonts/Akrobat-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Akrobat';
+    src: url('Akrobat-SemiBold.eot');
+    src: local('Akrobat SemiBold'), local('Akrobat-SemiBold'),
+        url('../fonts/Akrobat-SemiBold.eot') format('embedded-opentype'),
+        url('../fonts/Akrobat-SemiBold.woff2') format('woff2'),
+        url('../fonts/Akrobat-SemiBold.woff') format('woff'),
+        url('../fonts/Akrobat-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Akrobat';
+    src: url('Akrobat-Thin.eot');
+    src: local('Akrobat Thin'), local('Akrobat-Thin'),
+        url('../fonts/Akrobat-Thin.eot') format('embedded-opentype'),
+        url('../fonts/Akrobat-Thin.woff2') format('woff2'),
+        url('../fonts/Akrobat-Thin.woff') format('woff'),
+        url('../fonts/Akrobat-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Akrobat';
+    src: url('Akrobat-Bold.eot');
+    src: local('Akrobat Bold'), local('Akrobat-Bold'),
+        url('../fonts/Akrobat-Bold.eot') format('embedded-opentype'),
+        url('../fonts/Akrobat-Bold.woff2') format('woff2'),
+        url('../fonts/Akrobat-Bold.woff') format('woff'),
+        url('../fonts/Akrobat-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Akrobat';
+    src: url('Akrobat-Black.eot');
+    src: local('Akrobat Black'), local('Akrobat-Black'),
+        url('../fonts/Akrobat-Black.eot') format('embedded-opentype'),
+        url('../fonts/Akrobat-Black.woff2') format('woff2'),
+        url('../fonts/Akrobat-Black.woff') format('woff'),
+        url('../fonts/Akrobat-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Akrobat';
+    src: url('Akrobat-ExtraBold.eot');
+    src: local('Akrobat ExtraBold'), local('Akrobat-ExtraBold'),
+        url('../fonts/Akrobat-ExtraBold.eot') format('embedded-opentype'),
+        url('../fonts/Akrobat-ExtraBold.woff2') format('woff2'),
+        url('../fonts/Akrobat-ExtraBold.woff') format('woff'),
+        url('../fonts/Akrobat-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+

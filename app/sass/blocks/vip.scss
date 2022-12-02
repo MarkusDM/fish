@@ -1,0 +1,43 @@
+.vip {
+    margin-bottom: 13.2rem;
+    .container {
+        width: 100%;
+    }
+
+    .title {
+        text-align: center;
+        z-index: 2;
+        position: relative;
+        bottom: -3.2rem;
+        b {
+            color: #BF2B2B;
+           
+        }
+    }
+
+    &__image {
+        width: 100%;
+        height: 82.7rem;
+       
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__text {
+        padding-top: 4rem;
+        margin: 0 auto;
+        width: 111.6rem;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 156%;
+        letter-spacing: 0.02em;
+        color: #98989B;
+        column-width: 48%;
+        column-count: 2;
+        column-gap: 4%;
+        margin-bottom: 4rem;
+    }
+}
