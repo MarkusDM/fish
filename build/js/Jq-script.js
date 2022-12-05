@@ -55,4 +55,22 @@ $(document).ready(function() {
         }
     });
 
+
+
+
+
+
+
+    $(function() {
+        $('.header__burger').click(function(){
+            $(this).toggleClass('open');
+        });
+    });
+
+    $(".header__burger").on('click', function() {
+        $(".header__nav").toggleClass("open-nav");
+        // $("main").toggleClass("main-none")
+    });
+
+
 });

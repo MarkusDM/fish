@@ -92,7 +92,10 @@
             mix-blend-mode: lighten;
             font-size: 10.5rem;
             line-height: 12rem;
-            
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-image: url(../img/main/bg.png);
+            background-position: 65% 93%;
         }
 
         span {
@@ -138,6 +141,10 @@
             }
         }
 
+    }
+
+    &__title-mob {
+        display: none;
     }
     
 }
