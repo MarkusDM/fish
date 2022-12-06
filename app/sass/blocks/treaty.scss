@@ -1,0 +1,52 @@
+.treaty {
+    padding-top: 14.7rem;
+    padding-bottom: 15rem;
+    .container {
+        width: 112.2rem;
+    }
+
+    &__title {
+        font-family: 'Akrobat',sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 10.5rem;
+        line-height: 104%;
+        text-transform: uppercase;
+        margin-bottom: 5.5rem;
+        color: #2C2C2C;
+    }
+
+    &__text-lists {
+        padding-left: 9.4rem;
+        margin-bottom: 6.4rem;
+        li {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.6rem;
+            line-height: 156% ;
+            letter-spacing: 0.02em;
+            color: #98989B;
+            margin-bottom: 3rem;
+            list-style-type: decimal;
+        }
+
+        li:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__text-title {
+        font-family: 'Akrobat',sans-serif;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 3rem;
+        line-height: 100%;
+        text-transform: uppercase;
+        color: #1B1E1F;
+        margin-bottom: 2.6rem;
+    }
+
+    
+     
+   
+}

@@ -1,0 +1,92 @@
+.map {
+    padding-top: 7.5rem;
+    .container {
+        width: 100%;
+    }
+
+    #map {
+        height: 105rem;
+        width: 100%;
+    }
+
+    &__wrapper {
+        position: relative;
+    }
+
+
+    &__block {
+        position: absolute;
+        z-index: 3;
+        background: rgba(196, 196, 196, 0.15);
+        backdrop-filter: blur(35px);
+        width: 84.1rem;
+        height: 100%;
+        padding-top: 7.2rem;
+        padding-left: 38rem;
+    }
+
+    &__title {
+        font-family: 'Akrobat',sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 10.5rem;
+        line-height: 104%;
+        text-transform: uppercase;
+        margin-bottom: 4.3rem;
+        color: #1B1E1F;
+    }
+
+    &__inner {
+        margin-bottom: 5rem;
+        display: flex;
+        flex-direction: column;
+        width: 38.7rem;
+
+        span {
+            display: block;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.6rem;
+            line-height:  156%;
+            letter-spacing: 0.02em;
+            color: #1B1E1F;
+        }
+    }
+
+    &__inner-title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.6rem;
+        line-height: 1.9rem;
+        margin-bottom: 2rem;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #1B1E1F;
+
+    }
+
+    &__social-title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.6rem;
+        line-height: 1.9rem;
+        margin-bottom: 2rem;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #1B1E1F;
+    }
+
+    &__social {
+        display: flex;
+
+        a {
+            width: 4.1rem;
+            height: 4.1rem;
+            margin-right: 5rem;
+        }
+
+        a:last-child {
+            margin-right: 0;
+        }
+    }
+}

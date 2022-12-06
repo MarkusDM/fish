@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=d9808553-8489-4c47-b321-9e5761fb75aa&lang=ru_RU" type="text/javascript"></script>
+	<link rel="stylesheet" href="./css/style.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Главная</title>
+</head>
+
+<body>
+	<header class="header header--two">
+    <div class="container">
+        <div class="header__wrapper">
+            <a href="" class="header__logo">
+                <img src="./img/icon/logoblack.svg" alt="">
+            </a>
+            <div class="header__select">
+                <input class="header__select-input" type="hidden" name="">
+                <div class="header__select-head">RU</div>
+                <ul class="header__select-list">
+                    <li class="header__select-item">EN</li>
+                    <li class="header__select-item">RU</li>
+                </ul>
+            </div>
+            <nav class="header__nav">
+                <ul class="header__lists">
+                    <li class="header__item"><a href="">О компании</a></li>
+                    <li class="header__item"><a href="">Договор ОФ</a></li>
+                    <li class="header__item"><a href="">Туры</a></li>
+                    <li class="header__item"><a href="">Контакты</a></li>
+                    <li class="header__item"><a href="">8 496 335 85 22</a></li>
+                </ul>
+                 
+            </nav>
+            <div class="header__burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+</header>
+	
+	
+	<main>
+		<section class="map">
+    <div class="container">
+        <div class="map__wrapper">
+            <div class="map__block">
+                <div class="map__title">контакты</div>
+                <div class="map__inner">
+                    <div class="map__inner-title">связаться с нами:</div>
+                    <span>Москва: <a href="8 496 335 85 22">8 496 335 85 22</a></span>
+                    <span>Камчатка: <a href="8 496 335 85 22">8 496 335 85 22</a></span>
+                    <span><a href="yakimovichFishing@mail.com">yakimovichFishing@mail.com</a></span>
+                </div>
+                <!-- inner -->
+                <div class="map__inner">
+                    <div class="map__inner-title">График работы:</div>
+                    <span>Ежедневно с 6:00 до 20:00</span>
+                    <span>Выходные и праздники с 5:00 до 23:00</span>
+                    
+                </div>
+                <!-- inner -->
+                <div class="map__inner">
+                    <div class="map__inner-title">Наш адрес:</div>
+                    <span>117630, г. Москва, вн. тер. г. муниципальный округ
+                        Обручевский, ул. Обручева, дом 23, корпус 3, помещение XXIV, комната. 4Г
+                        </span>
+                    
+                    
+                </div>
+                <!-- inner -->
+                <div class="map__social-title">Наши соц. сети</div>
+                <div class="map__social">
+                    <a href="">
+                        <img src="./img/map/tege.svg" alt="">
+                    </a>
+                    <a href="">
+                        <img src="./img/map/whatt.svg" alt="">
+                    </a>
+                    <a href="">
+                        <img src="./img/map/inst.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div id="map"></div>
+        </div>
+    </div>
+</section>
+        <section class="contacts">
+    <div class="container">
+        <div class="contacts__wrapper">
+            <div class="contacts__text">
+                <div class="contacts__text-title">ОФОРМЛЕНИЕ ЗАЯВКИ</div>
+                <div class="contacts__text-words">
+                    Оставьте номер телефона, мы перезвоним в течении 10 минут
+                </div>
+            </div>
+            <form action="" class="contacts__form">
+                <div class="contacts__block">
+                    <div class="contacts__inner">
+                        <div class="contacts__select">
+                            <input class="contacts__select-input" type="hidden" name="">
+                            <div class="contacts__select-head">Вид тура </div>
+                            <ul class="contacts__select-list">
+                                <li class="contacts__select-item">Рыбалка на сома</li>
+                                <li class="contacts__select-item">Рыбалка на кита </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="contacts__inner">
+                        <input type="date" placeholder="дата">
+                    </div>
+                </div>
+                <!--  -->
+                <div class="contacts__block">
+                    <div class="contacts__inner">
+                        <input type="text" placeholder="Ваше имя">
+                    </div>
+                    <div class="contacts__inner">
+                        <input type="text" placeholder="+ 7 ___ ___ __ __">
+                    </div>
+                </div>
+                <!--  -->
+                <label class="checkbox-other">
+                    <input type="checkbox" >
+                    <span> Нажимая кнопку “оставить заявку”, вы даёте согласие<br> на обработку персональных данных</span>
+                  </label>
+                <button class="contacts__btn">
+                    <span>Оставить заявку</span>
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+	</main>
+	<footer class="footer">
+    <div class="container">
+        <a href="" class="footer__logo">
+            <img src="./img/icon/logo.svg" alt="">
+        </a>
+        <div class="footer__top">
+            <div class="footer__nav">
+                <ul class="footer__lists">
+                    <li class="footer__item"><a href="">О компании</a></li>
+                    <li class="footer__item"><a href="">Договор оферты</a></li>
+                    <li class="footer__item"><a href="">Туры</a></li>
+                    <li class="footer__item"><a href="">Контакты</a></li>
+                    <li class="footer__item"><a href="">ОТЗЫВЫ</a></li>
+                </ul>
+            </div>
+            <div class="footer__top-center">
+                <div class="footer__top-center-title">контакты:</div>
+                <a href="" class="footer__top-center-phone">8 496 335 85 22</a>
+                <a href="" class="footer__top-center-email">yakimovichfishing@mail.com</a>
+                <div class="footer__top-socials">
+                    <a href="">
+                        <img src="./img/icon/telegram.svg" alt="">
+                    </a>
+                    <a href="">
+                        <img src="./img/icon/whatsapp.svg" alt="">
+                    </a>
+                    <a href="">
+                        <img src="./img/icon/instag.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="footer__top-left">
+                <div class="footer__top-left-title">Остались вопросы?</div>
+                <div class="footer__top-left-text">Оставьте номер телефона, мы перезвоним в течении 10 минут</div>
+                <form action="" class="footer__top-left-form">
+                    <input type="text" placeholder="Ваше имя">
+                    <input type="text" placeholder="+ 7 ___ ___ __ __">
+                    <button class="footer__top-left-btn">
+                        <span>получить консультацию</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+        <!--  -->
+        <div class="footer__bottom">
+            <div class="footer__bottom-society">
+                <p>Общество с ограниченной ответственностью 
+                    «ЯКИМОВИЧ Фишинг»</p>
+
+                <span>ООО «ЯКИМОВИЧ Фишинг»</span>
+            </div>
+            <div class="footer__bottom-requisites">
+                <p>ИНН/КПП: 9728073297/772801001<br>
+                    ОГРН: 1227700565795<br>
+                    ОКПО: 77397870s</p>
+
+                <a href="">Все реквизиты</a>
+            </div>
+            <div class="footer__bottom-address">
+                <span>Юр. адрес: </span>
+                <p>117630, г. Москва, вн. тер. г. муниципальный округ
+                    Обручевский, ул. Обручева, д. 23, к. 3, помещение XXIV, комната. 4Г
+                    </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="./js/jquery-3.5.1.min.js"></script>
+<script src="./js/swiper-bundle.js"></script>
+<script src="./js/Jq-script.js"></script>
+<script src="./js/main.js"></script>
+</body>
+
+</html>
