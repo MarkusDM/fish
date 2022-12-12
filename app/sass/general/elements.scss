@@ -42,8 +42,10 @@
 		font-size: 3.2rem;
 		padding: 2rem;
 		border-radius: 100rem;
-		background: pink;
-		color: #fff;
+		background: none;
+		min-width: 20rem;
+		color: #1B1E1F;
+		border: 1px solid #1B1E1F;
 		margin-bottom: 4rem;
 	}
 }
