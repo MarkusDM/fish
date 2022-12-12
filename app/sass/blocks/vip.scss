@@ -26,9 +26,9 @@
     }
 
     &__text {
-        padding-top: 4rem;
+        padding-top: 4.7rem;
         margin: 0 auto;
-        width: 111.6rem;
+        width: 110.6rem;
         font-style: normal;
         font-weight: 400;
         font-size: 1.6rem;
@@ -39,5 +39,10 @@
         column-count: 2;
         column-gap: 4%;
         margin-bottom: 4rem;
+        text-align: left;
+        p {
+            text-indent: 9rem;
+            
+        }
     }
 }

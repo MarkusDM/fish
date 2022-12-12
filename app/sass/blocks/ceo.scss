@@ -1,0 +1,41 @@
+.ceo {
+    padding-top: 13.6rem;
+    margin-bottom: 15.3rem;
+    .container {
+        width: 112rem;
+    }
+
+    &__title {
+        text-align: center;
+        width: 72rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin:  0 auto;
+        strong {
+            font-family: 'Akrobat',sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 10.5rem;
+            line-height: 104%;
+            margin-bottom: 1.9rem;
+            text-align: center;
+            text-transform: uppercase;
+            color: #1B1E1F;
+            display: block;
+
+        }
+
+        span {
+            font-weight: 400;
+            font-size: 1.6rem;
+            line-height: 156%;
+            text-align: center;
+            letter-spacing: 0.02em;
+            color: #1B1E1F;
+            max-width: 58rem;
+
+        }
+    }
+}

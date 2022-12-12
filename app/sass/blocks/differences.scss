@@ -1,5 +1,5 @@
 .differences {
-    margin-bottom: 13.2rem;
+    margin-bottom: 14.2rem;
     .container {
         width: 100%;
     }
@@ -17,7 +17,7 @@
 
     &__image {
         width: 100%;
-        height: 82.7rem;
+        height: 82.8rem;
        
         img {
             width: 100%;
@@ -26,18 +26,24 @@
     }
 
     &__text {
-        padding-top: 4rem;
+        padding-top: 4.1rem;
         margin: 0 auto;
-        width: 111.6rem;
+        width: 111rem;
         font-style: normal;
         font-weight: 400;
         font-size: 1.6rem;
         line-height: 156%;
-        letter-spacing: 0.02em;
-        color: #98989B;
+        letter-spacing: .02em;
+        color: #98989b;
         column-width: 48%;
         column-count: 2;
         column-gap: 4%;
-        margin-bottom: 4rem;
+        margin-bottom: 5rem;
+        text-align: left;
+
+        p {
+            text-indent: 9rem;
+            
+        }
     }
 }

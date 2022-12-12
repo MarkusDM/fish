@@ -1,5 +1,5 @@
 .offers {
-    margin-bottom: 15rem;
+    margin-bottom: 10.9rem;
     .container {
         width: 130.1rem;
        
@@ -11,10 +11,10 @@
     }
 
     &__image {
-        width: 70rem;
-        height: 49rem;
+        width: 63rem;
+        height: 54rem;
         display: inline-block;
-        min-width: 42rem;
+        
         img {
             width: 100%;
             height: 100%;
@@ -23,7 +23,8 @@
     }
 
     &__text {
-        width: 53.4rem;
+        width: 62.4rem;
+        margin-top: 6rem;
     }
 
     &__title {
@@ -42,13 +43,14 @@
     &__words {
         font-style: normal;
         font-weight: 400;
+        width: 51rem;
         font-size: 1.6rem;
-        line-height: 156%;
+        line-height: 157%;
         letter-spacing: 0.02em;
         color: #98989B;
         padding-bottom: 8rem;
         border-bottom: 1.5px solid #C9C8D0;
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
     }
 
     .link {

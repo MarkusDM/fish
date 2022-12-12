@@ -1,7 +1,7 @@
 .boats {
     margin-bottom: 14.6rem;
     .title {
-        margin-bottom: 7.6rem;
+        margin-bottom: 6.5rem;
         padding-left: 40rem;
     }
     .container {
@@ -26,32 +26,41 @@
     }
 
     &__slide {
-        min-width: 73rem;
-        max-width: 73rem;
+        // min-width: 73rem;
+        // max-width: 73rem;
+        min-width: fit-content;
     }
 
     &__slide-two {
-        min-width: 73rem;
-        max-width: 73rem;
+        // min-width: 73rem;
+        // max-width: 73rem;
+        min-width: fit-content;
     }
     
 
     &__image {
-        min-width: 73rem;
+        // min-width: 73rem;
+        min-width: fit-content;
         height: 38.9rem;
+        cursor: pointer;
+        transition: all 0.2s;
+        &:hover {
+            transition: all 0.2s;
+            transform: scale(1.05 );
+        }
         img {
             min-width: 100%;
             height: 100%;
-            object-fit: cover;
+            
             
         }
     }
 
 
     &__text {
-        padding-top: 7.2rem;
+        padding-top: 4.7rem;
         margin: 0 auto;
-        width: 111.6rem;
+        width: 111.3rem;
         font-style: normal;
         font-weight: 400;
         font-size: 1.6rem;
@@ -62,6 +71,11 @@
         column-count: 2;
         column-gap: 4%;
         margin-bottom: 4rem;
+
+        p {
+            text-indent: 8rem;
+            
+        }
 
     }
 }

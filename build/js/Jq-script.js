@@ -97,4 +97,18 @@ $(document).ready(function() {
     });
 
 
+    $(".feedback-form__star").on('click', function() {
+        $(this).toggleClass('feedback-form__star--active')
+    });
+
+
+
+  
+        
+    
+
+
+    
+
+
 });

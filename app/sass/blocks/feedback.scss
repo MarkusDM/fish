@@ -1,0 +1,121 @@
+.feedback {
+    padding-top: 7.4rem;
+    padding-bottom: 16.6rem;
+    .container {
+        width: 112rem;
+    }
+
+    &__bg {
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 210%;
+        background: #F5F5F5;
+        top: 0;
+        
+    }
+
+    &__pagination {
+        margin-top: 5rem;
+        width: 100%;
+        padding: 0;
+    }
+
+    &__bullets {
+        display: flex;
+    }
+
+    &__swiper {
+        height: 124rem;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .category {
+        margin-bottom: 3rem;
+    }
+
+    &__title {
+        display: flex;
+        justify-content: space-between;
+       
+        strong {
+            display: inline-block;
+            font-family: 'Akrobat',sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 10.5rem;
+            line-height:  104%;
+            text-transform: uppercase;
+            color: #1B1E1F;
+
+        }
+    }
+
+    .link {
+        margin-top: 4.3rem;
+        &::before {
+            background-image: url(../img/icon/arrownextred.svg);
+        }
+        span {
+            color: #BF2B2B;
+        }
+    }
+}
+
+.feedback-card {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    border-bottom: 1px solid #C9C8D0;
+    &__inner {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.6rem;
+    }
+
+    &__name {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.6rem;
+        line-height: 1.9rem;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        margin-right: 3.5rem;
+        color: #1B1E1F;
+
+    }
+    &__date {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 156% ;
+        letter-spacing: 0.02em;
+        color: #C9C8D0;
+    }
+
+    &__stars {
+        display: flex;
+        margin-bottom: 2.2rem;
+
+    }
+
+    &__star {
+        width: 1.3rem;
+        height: 1.2rem;
+        display: inline-block;
+        margin-right: 1rem;
+    }
+
+    &__star:last-child {
+        margin-right: 0;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 156%;
+        letter-spacing: 0.02em;
+        color: #1B1E1F;
+        width: 100.7rem;
+    }
+}

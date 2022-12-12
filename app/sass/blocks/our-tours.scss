@@ -1,0 +1,117 @@
+.our-tours {
+    padding-top: 6.5rem;
+    .container {
+        width: 100%;
+    }
+
+    #map {
+        height: 105rem;
+        width: 100%;
+    }
+
+    &__wrapper {
+        position: relative;
+    }
+
+
+    &__block {
+        position: absolute;
+        z-index: 3;
+        background: rgba(196, 196, 196, 0.15);
+        backdrop-filter: blur(35px);
+        width: 84.1rem;
+        height: 100%;
+        padding-top: 7.2rem;
+        padding-left: 40rem;
+    }
+
+    &__title {
+        font-family: 'Akrobat',sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 10.5rem;
+        line-height: 104%;
+        text-transform: uppercase;
+        margin-bottom: 3.9rem;
+        color: #1B1E1F;
+    }
+
+
+    &__feedback {
+       
+    }
+
+    .link {
+        &::before {
+            background-image: url(../img/icon/arrownextblack.svg);
+        }
+        span {
+            color: #1B1E1F;
+
+        }
+    }
+
+    &__text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 156%;
+        width: 38.2rem;
+        letter-spacing: 0.02em;
+        color: #1B1E1F;
+        margin-bottom: 24rem;
+    }
+
+
+    &__feedback-inner {
+        display: flex;
+        align-items: center;
+        margin-bottom: 4.7rem;
+    }
+
+    &__feedback-image {
+        height: 6.2rem;
+        width: 16rem;
+        margin-right: 1.4rem;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__feedback-text {
+        display: flex;
+        flex-direction: column;
+
+        strong {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 1.6rem;
+            line-height: 2rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #1B1E1F;
+            display: block;
+            margin-bottom: 0.4rem;
+        }
+
+        span {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.6rem;
+            display: block;
+            line-height: 156% ;
+            letter-spacing: 0.02em;
+            color: #98989B;
+        }
+    }
+
+    #map {
+        height: 104.5rem;
+        width: 100%;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

@@ -1,13 +1,14 @@
 .contacts {
     padding-top: 15.3rem;
-    padding-bottom: 12.6rem;
+    padding-bottom: 14.7rem;
     .container {
-        width: 113.8rem;
+        width: 112rem;
     }
 
     &__wrapper {
         display: flex;
         justify-content: space-between;
+        padding-top: 1rem;
     }
 
     &__text {
@@ -42,6 +43,8 @@
     
     &__form {
         width: 67rem;
+        margin-right: -14rem;
+        margin-top: -1rem;
        
         
     }
@@ -89,6 +92,24 @@
         .contacts__inner:first-child {
             margin-right: 5rem;
         }
+        input::-webkit-calendar-picker-indicator {
+            opacity: 0;
+        }
+
+
+        .calendar{
+            position: relative;
+            &::before {
+                position: absolute;
+                content:'';
+                width: 2.4rem;
+                height: 2.3rem;
+                background-image: url(../img/icon/calendarblack.svg);
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                right: 0.1rem;
+            }
+        }
         
     }
 
@@ -100,7 +121,7 @@
 
 
     &__select {
-        padding-top: 1.1rem;
+        
         position: relative;
         display: block;
         background: none;

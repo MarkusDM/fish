@@ -1,7 +1,7 @@
 .tackle {
     margin-bottom: 14.7rem;
     .container {
-        width: 120rem;
+        width: 112rem;
     }
 
     .title {
@@ -14,22 +14,30 @@
     }
 
 
-    &__text {
-        padding-top: 7.2rem;
-        margin: 0 auto;
-      
-        font-style: normal;
-        font-weight: 400;
-        font-size: 1.6rem;
-        line-height: 156%;
-        letter-spacing: 0.02em;
-        color: #98989B;
-        column-width: 48%;
-        column-count: 2;
-        column-gap: 4%;
-        margin-bottom: 4rem;
+  
+        &__text {
+            padding-top: 5.7rem;
+            margin: 0 auto;
+            width: 111.3rem;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.6rem;
+            line-height: 156%;
+            letter-spacing: 0.02em;
+            color: #98989B;
+            column-width: 48%;
+            column-count: 2;
+            column-gap: 4%;
+            margin-bottom: 4.2rem;
+    
+            p {
+                text-indent: 10rem;
+                
+            }
+    
+        }
 
-    }
+    
 }
 
 
@@ -44,7 +52,7 @@
         max-width: 29rem;
         min-width: 29rem;
         height: 39.8rem;
-        margin-bottom: 4.3rem;
+        margin-bottom: 4rem;
     }
 
     &__image {
@@ -86,6 +94,7 @@
             letter-spacing: 0.1em;
             text-transform: uppercase;
             color: #1B1E1F;
+            margin-bottom: 1rem;
         }
 
     }
