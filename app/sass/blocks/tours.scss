@@ -5,6 +5,15 @@
         width: 115.6rem;
     }
 
+
+    &__swiper {
+        display: none;
+    }
+
+    &__pagination {
+        display: none;
+    }
+
     .title {
         text-align: center;
         margin-bottom: 9.6rem;
@@ -18,10 +27,12 @@
     &__cards {
         display: flex;
         justify-content: space-between;
-        padding-left: 4rem;
+        
         
 
     }
+
+  
 
     &__map {
         position: absolute;
@@ -136,6 +147,11 @@
             color: #98989B;
         }
     }
+
+
+    &__title {
+        display: none;
+    }
     
 
 }
@@ -148,6 +164,12 @@
         display: flex;
         margin-bottom: 1.2rem;
     }
+
+    &__title {
+        display: none;
+    }
+
+   
 
     &__number {
         font-style: normal;
@@ -226,6 +248,12 @@
         }
 
     }
+
+
+  
+
+
+ 
 
    
 }

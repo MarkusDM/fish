@@ -32,6 +32,11 @@
         color: #FFFFFF;
     }
 
+
+    &__image {
+        display: none;
+    }
+
    
 
     &__block {
@@ -193,6 +198,10 @@
             border-bottom: 2px solid #FFFFFF;
 
         }
+    }
+
+    &__text {
+        display: none;
     }
 
     .checkbox-other {

@@ -1,3 +1,5 @@
+"use strict";
+
 $(document).ready(function() {
 
     $('.header__select').on('click', '.header__select-head', function() {

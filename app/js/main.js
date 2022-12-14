@@ -1,3 +1,5 @@
+"use strict";
+
 const boatsSwiper = new Swiper('.boats__swiper', {
   loop: true,
   initialSlide: 1,
@@ -310,6 +312,44 @@ const feedbackSwiper = new Swiper('.feedback__swiper', {
 
 
 
+const toursSwiper = new Swiper('.tours__swiper', {
+  
+  slidesPerView: 'auto',
+  wrapperClass: 'tours__swiper-wrapper',
+  slideClass: 'tours__slide',
+  speed: 500,
+  spaceBetween: 20,
+  navigation: {
+    prevEl: '.tours__prev',
+    nextEl: '.tours__next',
+  },
+
+
+  pagination: {
+    el: '.tours__bullets',
+    clickable: true,
+    renderBullet: function (index, className) {
+      return (
+        '<span class="' +
+        className +
+        '">' +
+        (index < 10 ? '0' + (index + 1) : index + 1) +
+        '</span>'
+      )
+    },
+  },
+
+
+
+  scrollbar: {
+    el: ".tours__scroll",
+  },
+
+
+
+
+
+});
 
 
 
