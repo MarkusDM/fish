@@ -75,6 +75,7 @@
         }
 
         .calendar{
+            display: block;
             position: relative;
             &::before {
                 position: absolute;

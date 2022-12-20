@@ -734,6 +734,12 @@ input[type="number"] {
     .pagination__prev:hover > svg {
       -webkit-transform: translateX(-0.4rem);
               transform: translateX(-0.4rem); }
+  .pagination .swiper-button-disabled {
+    border: 1.5px solid #C9C8D0;
+    fill: #C9C8D0; }
+    .pagination .swiper-button-disabled:hover > svg {
+      -webkit-transform: translateX(0rem);
+              transform: translateX(0rem); }
 
 .black-link {
   font-style: normal;
@@ -776,6 +782,13 @@ input[type="number"] {
     padding-right: 0; }
     .category a:last-child::before {
       display: none; }
+
+.disabled-class {
+  background: #98989B;
+  color: #fff !important; }
+  .disabled-class:hover {
+    background: #98989B;
+    color: #fff !important; }
 
 .header {
   position: relative;
@@ -1812,6 +1825,7 @@ input[type="number"] {
     .applications__block .applications__inner:first-child {
       margin-right: 5rem; }
     .applications__block .calendar {
+      display: block;
       position: relative; }
       .applications__block .calendar::before {
         position: absolute;

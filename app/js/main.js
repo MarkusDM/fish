@@ -1,5 +1,8 @@
 "use strict";
 
+
+
+
 const boatsSwiper = new Swiper('.boats__swiper', {
   loop: true,
   initialSlide: 1,
@@ -111,10 +114,8 @@ boatsTwoSwiper.params.control = boatsSwiper;
 
 const partnersSwiper = new Swiper('.partners__swiper', {
   // loop: true,
-  slidesPerView: 1,
+  slidesPerView: 'auto',
   spaceBetween: 50,
-
-  loop: true,
   wrapperClass: 'partners__swiper-wrapper',
   slideClass: 'partners__slide',
   speed: 500,
@@ -422,3 +423,5 @@ ymaps.ready(function () {
       map.controls.remove('rulerControl'); // удаляем контрол правил
       map.behaviors.disable(['scrollZoom']); // отключаем скролл карты (опционально)
 });
+
+

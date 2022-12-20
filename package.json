@@ -4,6 +4,7 @@
   "description": "Bear-Shop",
   "main": "index.js",
   "dependencies": {
+    "air-datepicker": "^3.3.3",
     "gulp": "^4.0.2",
     "jquery-zoom": "^1.7.21"
   },

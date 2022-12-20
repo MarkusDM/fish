@@ -187,6 +187,17 @@
 			}
 		  }
 	}
+
+
+	.swiper-button-disabled {
+		border: 1.5px solid #C9C8D0;
+		fill: #C9C8D0;
+		&:hover {
+			> svg {
+				transform: translateX( 0rem);
+			  }
+		}
+	}
 }
 
 
@@ -233,9 +244,20 @@
 	a:last-child {
 		margin-right: 0;
 		padding-right: 0;
+		
 		&::before {
 			display: none;
 		}
+	}
+}
+
+
+.disabled-class {
+	background: #98989B;
+	color: #fff!important;
+	&:hover {
+		background: #98989B;
+		color: #fff!important;	
 	}
 }
 

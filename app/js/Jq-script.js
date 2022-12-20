@@ -117,3 +117,23 @@ $(document).ready(function() {
 
 
 });
+
+
+
+
+new AirDatepicker('#airdatepicker', {
+    isMobile: true,
+    autoClose: true,
+    onRenderCell({date, cellType}) {
+        // Disable all 12th dates in month
+        if (cellType === 'day') {
+            if (date.getDate() === 12) {
+                return {
+                    disabled: true,
+                    classes: 'disabled-class'
+                   
+                }
+            }
+        }
+    }
+})
