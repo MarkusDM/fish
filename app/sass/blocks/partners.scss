@@ -20,9 +20,15 @@
     }
 
     &__content {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        // display: flex;
+        // flex-wrap: wrap;
+     
+        // flex-grow: 1;
+        // flex-shrink: 1;
+
+        display: grid;
+        grid-template-columns: repeat(4, 2fr);
+        flex-grow: 1;
     } 
 
 
@@ -30,8 +36,8 @@
         width: fit-content;
         max-width: 28.8rem;
         height: 9.4rem;
-        min-width: 12.4rem;
-        margin-right: 9.9rem;
+        min-width: 21rem;
+        margin-right: 9.7rem;
         margin-bottom: 12.7rem;
         img {
             width: 100%;

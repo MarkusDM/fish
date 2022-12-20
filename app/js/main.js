@@ -3,8 +3,7 @@
 const boatsSwiper = new Swiper('.boats__swiper', {
   loop: true,
   initialSlide: 1,
-  slidesPerGroup: 3,
-  centeredSlides: true,
+  centeredSlides: false,
   slidesPerView: 'auto',
   spaceBetween: 20,
   wrapperClass: 'boats__swiper-wrapper',
@@ -15,7 +14,6 @@ const boatsSwiper = new Swiper('.boats__swiper', {
     prevEl: '.boats__prev',
     nextEl: '.boats__next',
   },
-
 
   pagination: {
     el: '.boats__bullets',
@@ -41,10 +39,10 @@ const boatsSwiper = new Swiper('.boats__swiper', {
   breakpoints: {
     
     748: {
-      slidesPerView: 1.9,
-      slidesPerGroup: 3,
+      slidesPerView: 2,
       spaceBetween: 45,
       centeredSlides: true,
+      watchOverflow: true,
     
     },
    
@@ -60,6 +58,7 @@ const boatsTwoSwiper = new Swiper('.boats__swiper-two', {
   slidesPerGroup: 3,
   centeredSlides: true,
   slidesPerView: 'auto',
+  freeMode: true,
   spaceBetween: 20,
   wrapperClass: 'boats__swiper-wrapper-two',
   slideClass: 'boats__slide-two',
@@ -99,7 +98,7 @@ const boatsTwoSwiper = new Swiper('.boats__swiper-two', {
       slidesPerGroup: 4,
       spaceBetween: 45,
       centeredSlides: false,
-    
+      loop: true,
     },
    
   },
@@ -107,7 +106,8 @@ const boatsTwoSwiper = new Swiper('.boats__swiper-two', {
 
 });
 
-
+boatsSwiper.params.control = boatsTwoSwiper;
+boatsTwoSwiper.params.control = boatsSwiper;
 
 const partnersSwiper = new Swiper('.partners__swiper', {
   // loop: true,
@@ -153,7 +153,6 @@ const partnersSwiper = new Swiper('.partners__swiper', {
 const relaxationSwiper = new Swiper('.relaxation__swiper', {
   loop: true,
   initialSlide: 1,
-  slidesPerGroup: 3,
   centeredSlides: true,
   slidesPerView: 'auto',
   spaceBetween: 20,
@@ -191,7 +190,6 @@ const relaxationSwiper = new Swiper('.relaxation__swiper', {
     
     748: {
       slidesPerView: 2,
-      slidesPerGroup: 3,
       spaceBetween: 45,
       centeredSlides: true,
     
@@ -206,7 +204,6 @@ const relaxationTwoSwiper = new Swiper('.relaxation__swiper-two', {
 
   loop: true,
   initialSlide: 1,
-  slidesPerGroup: 3,
   centeredSlides: true,
   slidesPerView: 'auto',
   spaceBetween: 20,
@@ -244,8 +241,7 @@ const relaxationTwoSwiper = new Swiper('.relaxation__swiper-two', {
   breakpoints: {
     
     748: {
-      slidesPerView: 2.9,
-      slidesPerGroup: 4,
+      slidesPerView: 3.2,
       spaceBetween: 45,
       centeredSlides: false,
     
@@ -256,6 +252,10 @@ const relaxationTwoSwiper = new Swiper('.relaxation__swiper-two', {
 
 
 });
+
+
+relaxationSwiper.params.control = relaxationTwoSwiper;
+relaxationTwoSwiper.params.control = relaxationSwiper;
 
 
 const feedbackSwiper = new Swiper('.feedback__swiper', {

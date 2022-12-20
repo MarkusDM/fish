@@ -235,6 +235,12 @@
         padding-right: 6rem;
         color: #1B1E1F;
         position: relative;
+        &:hover {
+            &::before {
+                transform: translateX(0.4rem);
+        
+            }
+        }
         &::before {
             position: absolute;
             content: '';
@@ -245,6 +251,7 @@
             background-size: 100% 100%;
             right: 0;
             top: 0.5rem;
+            transition: transform .5s ease;
         }
 
     }

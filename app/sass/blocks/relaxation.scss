@@ -99,8 +99,9 @@
         height: 34.6rem;
         transition: all 0.2s;
         cursor: pointer;
+        transition: transform .5s ease;
         &:hover {
-            transition: all 0.2s;
+            transition: transform .5s ease;
             transform: scale(1.05 );
         }
         img {

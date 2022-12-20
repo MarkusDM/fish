@@ -43,17 +43,17 @@ $(document).ready(function() {
         }
     });
 
-    $('.contacts__select').on('click', '.contacts__select-item', function() {
-        $('.contacts__select-head').removeClass('open');
+    $('.applications__select').on('click', '.applications__select-item', function() {
+        $('.applications__select-head').removeClass('open');
         $(this).parent().fadeOut();
         $(this).parent().prev().text($(this).text());
         $(this).parent().prev().prev().val($(this).text());
     });
 
     $(document).click(function(e) {
-        if (!$(e.target).closest('.contacts__select').length) {
-            $('.contacts__select-head').removeClass('open');
-            $('.contacts__select-list').fadeOut();
+        if (!$(e.target).closest('.applications__select').length) {
+            $('.applications__select-head').removeClass('open');
+            $('.applications__select-list').fadeOut();
         }
     });
 
@@ -68,6 +68,9 @@ $(document).ready(function() {
             $(this).next().fadeIn();
         }
     });
+
+
+
 
     $('.contacts__select').on('click', '.contacts__select-item', function() {
         $('.contacts__select-head').removeClass('open');

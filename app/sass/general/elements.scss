@@ -5,6 +5,15 @@
 	display: inline-block;
 	position: relative;
 	padding-right: 6rem;
+	
+	&:hover {
+		&::before {
+			transform: translateX(0.4rem);
+	
+		}
+
+		
+	}
 	&::before {
 		position: absolute;
 		content:'';
@@ -15,6 +24,7 @@
 		background-size: 100% 100%;
 		right: 0;
 		top: 0.4rem;
+		transition: transform .5s ease;
 	}
 	span {
 		font-style: normal;
@@ -24,6 +34,7 @@
 		color: #FFFFFF;
 		letter-spacing: 0.1em;
 		text-transform: uppercase;
+		transition: all .5s;
 	}
 }
 
@@ -150,9 +161,15 @@
 		position: relative;
 		cursor: pointer;
 		fill: #1B1E1F;
+		&:hover {
+			> svg {
+			  transform: translateX(0.4rem);
+			}
+		  }
 		svg {
 			width: 1.6rem;
 			height: 1rem;
+			transition: transform .5s ease;
 		}
 
 	
@@ -164,6 +181,11 @@
 
 	&__prev {
 		margin-right: 2.2rem;
+		&:hover {
+			> svg {
+			  transform: translateX(-0.4rem);
+			}
+		  }
 	}
 }
 
@@ -216,3 +238,5 @@
 		}
 	}
 }
+
+

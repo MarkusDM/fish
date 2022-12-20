@@ -121,7 +121,7 @@
      &__stars {
         display: flex;
         align-items: center;
-        margin-bottom: 8.1rem;
+        margin-bottom: 5.1rem;
      }
 
      &__stats-text {
@@ -165,22 +165,42 @@
         }
     }
 
-    &__star {
-        width: 2.27rem;
-        height: 2.1rem;
-        fill: #C9C8D0;
-        display: inline-block;
-        margin-right: 1.7rem;
+  
+
+
+    .full-stars {
+        text-align: center;
+    }
+    .full-stars .rating-group {
+        display: inline-flex;
+    }
+    .full-stars input {
+        position: absolute;
+        left: -9999px;
+    }
+    .full-stars label {
+        margin: 0;
         cursor: pointer;
     }
-
-    &__star--active {
+    .full-stars label svg {
+        margin-right: 1.7rem;
+        width: 2.27rem;
+        height: 2.1rem;
+        fill: #BF2B2B;
+        cursor: pointer;
+        transition: fill 0.3s;
+    }
+    .full-stars input:checked ~ label svg {
+        fill: #C9C8D0;
+    }
+    .full-stars .rating-group:hover label svg {
         fill: #BF2B2B;
     }
-
-    &__stars-inner {
-        display: flex;
+    .full-stars .rating-group input:hover ~ label svg {
+        fill: #C9C8D0;
     }
+
+    
 
 
 }
