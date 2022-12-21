@@ -132,8 +132,8 @@ new AirDatepicker('#airdatepicker', {
                     disabled: true,
                     classes: 'disabled-class'
                    
-                }
+                };
             }
         }
     }
-})
+});

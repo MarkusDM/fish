@@ -5,9 +5,9 @@
 
 const boatsSwiper = new Swiper('.boats__swiper', {
   loop: true,
-  initialSlide: 1,
-  centeredSlides: false,
-  slidesPerView: 'auto',
+  initialSlide: 2,
+  centeredSlides: true,
+  slidesPerView: 3,
   spaceBetween: 20,
   wrapperClass: 'boats__swiper-wrapper',
   slideClass: 'boats__slide',
@@ -46,7 +46,7 @@ const boatsSwiper = new Swiper('.boats__swiper', {
       spaceBetween: 45,
       centeredSlides: true,
       watchOverflow: true,
-    
+      initialSlide: 1,
     },
    
   },
@@ -319,7 +319,7 @@ const toursSwiper = new Swiper('.tours__swiper', {
   wrapperClass: 'tours__swiper-wrapper',
   slideClass: 'tours__slide',
   speed: 500,
-  spaceBetween: 20,
+  spaceBetween: 64,
   navigation: {
     prevEl: '.tours__prev',
     nextEl: '.tours__next',

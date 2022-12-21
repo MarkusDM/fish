@@ -1,6 +1,8 @@
 .main {
     min-height: 100vh;
-
+    &__bg-mobile {
+        display: none;
+    }
     &__fullscreen {
         
         position: absolute;

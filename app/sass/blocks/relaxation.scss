@@ -6,6 +6,7 @@
 
     .link {
         margin-bottom: 3rem;
+        font-size: 0;
         &::before {
             background-image: url(../img/icon/arrownextblack.svg);
         }
@@ -15,6 +16,10 @@
     }
     .title {
         margin-top: -3rem;
+
+        span {
+            display: none;
+        }
     }
 
     &__block {

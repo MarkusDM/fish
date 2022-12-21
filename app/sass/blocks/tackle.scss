@@ -4,6 +4,10 @@
         width: 112rem;
     }
 
+    &__mob {
+        display: none;
+    }
+
     .title {
         margin-bottom: 5.2rem;
     }
@@ -63,6 +67,8 @@
             height: 100%;
         }
     }
+
+  
 
     &__text {
         width: 100%;
