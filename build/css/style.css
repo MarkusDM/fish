@@ -3079,6 +3079,40 @@ input[type="number"] {
     border-bottom: 2px solid #1B1E1F;
     color: #1B1E1F;
     padding-top: 2rem; }
+  .article-card .rating {
+    display: inline-block;
+    width: auto;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg); }
+  .article-card .rating .star {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    margin-right: 1.7rem;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg); }
+  .article-card .rating .star:last-child {
+    margin-right: 0; }
+  .article-card .rating .star::before {
+    content: '';
+    background-image: url(../img/feedback/stargrey.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: block;
+    width: 2rem;
+    height: 2rem; }
+  .article-card .rating .star.--selected,
+  .article-card .rating .star.--selected ~ .star,
+  .article-card .rating .star:hover,
+  .article-card .rating .star:hover ~ .star {
+    font-weight: 900;
+    color: red; }
+    .article-card .rating .star.--selected::before,
+    .article-card .rating .star.--selected ~ .star::before,
+    .article-card .rating .star:hover::before,
+    .article-card .rating .star:hover ~ .star::before {
+      background-image: url(../img/feedback/starred.svg); }
 
 .ceo {
   padding-top: 13.6rem;

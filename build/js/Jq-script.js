@@ -110,7 +110,10 @@ $(document).ready(function() {
 
   
         
-    
+    $('.rating .star').on('click', function() {
+        $(this).closest('.rating').find('.--selected').removeClass('--selected');
+        $(this).toggleClass('--selected');
+      });
 
 
     

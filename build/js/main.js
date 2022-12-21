@@ -5,8 +5,6 @@
 
 const boatsSwiper = new Swiper('.boats__swiper', {
   loop: true,
-  initialSlide: 2,
-  centeredSlides: true,
   slidesPerView: 3,
   spaceBetween: 20,
   wrapperClass: 'boats__swiper-wrapper',
@@ -42,11 +40,9 @@ const boatsSwiper = new Swiper('.boats__swiper', {
   breakpoints: {
     
     748: {
-      slidesPerView: 2,
+      slidesPerView: 3,
+      slidesPerGroup: 3,
       spaceBetween: 45,
-      centeredSlides: true,
-      watchOverflow: true,
-      initialSlide: 1,
     },
    
   },
@@ -61,7 +57,6 @@ const boatsTwoSwiper = new Swiper('.boats__swiper-two', {
   slidesPerGroup: 3,
   centeredSlides: true,
   slidesPerView: 'auto',
-  freeMode: true,
   spaceBetween: 20,
   wrapperClass: 'boats__swiper-wrapper-two',
   slideClass: 'boats__slide-two',
@@ -73,19 +68,19 @@ const boatsTwoSwiper = new Swiper('.boats__swiper-two', {
   },
 
 
-  pagination: {
-    el: '.boats__bullets',
-    clickable: true,
-    renderBullet: function (index, className) {
-      return (
-        '<span class="' +
-        className +
-        '">' +
-        (index < 10 ? '0' + (index + 1) : index + 1) +
-        '</span>'
-      )
-    },
-  },
+  // pagination: {
+  //   el: '.boats__bullets',
+  //   clickable: true,
+  //   renderBullet: function (index, className) {
+  //     return (
+  //       '<span class="' +
+  //       className +
+  //       '">' +
+  //       (index < 10 ? '0' + (index + 1) : index + 1) +
+  //       '</span>'
+  //     )
+  //   },
+  // },
 
 
 
@@ -98,10 +93,10 @@ const boatsTwoSwiper = new Swiper('.boats__swiper-two', {
     
     748: {
       slidesPerView: 3,
-      slidesPerGroup: 4,
+      slidesPerGroup: 3,
       spaceBetween: 45,
-      centeredSlides: false,
       loop: true,
+      centeredSlides: true,
     },
    
   },

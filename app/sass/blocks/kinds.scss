@@ -140,4 +140,50 @@
         color: #1B1E1F;
         padding-top: 2rem;
     }
+
+    
+   
+    .rating {
+      display: inline-block;
+      width: auto;
+      transform: rotate(180deg);
+     
+    }
+    
+    .rating .star {
+      display: inline-block;
+      width: 2rem;
+      height: 2rem;
+      cursor: pointer;
+     margin-right: 1.7rem;
+     transform: rotate(180deg);
+    }
+    
+    .rating .star:last-child {
+      margin-right: 0;
+    }
+    
+    .rating .star::before {
+      content: '';
+      background-image: url(../img/feedback/stargrey.svg);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      display: block;
+      width: 2rem;
+      height: 2rem;
+     
+    }
+    
+    .rating .star.--selected,
+    .rating .star.--selected ~ .star,
+    .rating .star:hover,
+    .rating .star:hover ~ .star {
+      font-weight: 900;
+      color: red;
+      &::before {
+        background-image: url(../img/feedback/starred.svg);
+      }
+    }
+
+   
 }
