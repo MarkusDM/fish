@@ -1,16 +1,16 @@
 "use strict";
 
 
-
-
 const boatsSwiper = new Swiper('.boats__swiper', {
-  loop: true,
-  slidesPerView: 3,
-  spaceBetween: 20,
   wrapperClass: 'boats__swiper-wrapper',
   slideClass: 'boats__slide',
   speed: 500,
-
+  initialSlide: 2.5,
+  slidesPerView: 1.6,
+  slidesPerGroup: 3,
+  loop: true,
+ 
+  spaceBetween: 20,
   navigation: {
     prevEl: '.boats__prev',
     nextEl: '.boats__next',
@@ -30,38 +30,38 @@ const boatsSwiper = new Swiper('.boats__swiper', {
     },
   },
 
-
-
   scrollbar: {
     el: ".boats__scroll",
   },
 
-
   breakpoints: {
-    
+
     748: {
-      slidesPerView: 3,
+
+
+      slidesPerView: 2.5,
       slidesPerGroup: 3,
       spaceBetween: 45,
+      loop: true,
     },
-   
-  },
 
+  },
 
 });
 
 
 const boatsTwoSwiper = new Swiper('.boats__swiper-two', {
-  loop: true,
-  initialSlide: 1,
-  slidesPerGroup: 3,
-  centeredSlides: true,
-  slidesPerView: 'auto',
-  spaceBetween: 20,
+
+
   wrapperClass: 'boats__swiper-wrapper-two',
   slideClass: 'boats__slide-two',
   speed: 500,
-
+  initialSlide: 0,
+  slidesPerView: 8,
+  slidesPerGroup: 3,
+  loop: true,
+ 
+  spaceBetween: 20,
   navigation: {
     prevEl: '.boats__prev',
     nextEl: '.boats__next',
@@ -90,15 +90,15 @@ const boatsTwoSwiper = new Swiper('.boats__swiper-two', {
 
 
   breakpoints: {
-    
+
     748: {
-      slidesPerView: 3,
+      slidesPerView: 4,
       slidesPerGroup: 3,
       spaceBetween: 45,
       loop: true,
-      centeredSlides: true,
-    },
-   
+
+    }
+
   },
 
 
@@ -145,17 +145,39 @@ const partnersSwiper = new Swiper('.partners__swiper', {
 });
 
 
+const partnersSwiperTwo = new Swiper('.partners__swiper-mob', {
+  // loop: true,
+  slidesPerView: 1,
+  spaceBetween: 50,
+  wrapperClass: 'partners__swiper-mob-wrapper',
+  slideClass: 'partners__swiper-mob-slide',
+  speed: 500,
+
+  navigation: {
+    prevEl: '.partners__prev-mob',
+    nextEl: '.partners__next-mob',
+  },
+
+
+  scrollbar: {
+    el: ".partners__scroll-mob",
+  },
+
+
+});
+
 
 const relaxationSwiper = new Swiper('.relaxation__swiper', {
-  loop: true,
-  initialSlide: 1,
-  centeredSlides: true,
   slidesPerView: 'auto',
-  spaceBetween: 20,
   wrapperClass: 'relaxation__swiper-wrapper',
   slideClass: 'relaxation__slide',
   speed: 500,
-
+  initialSlide: 2.5,
+  slidesPerView: 2,
+  slidesPerGroup: 3,
+  loop: true,
+ 
+  spaceBetween: 20,
   navigation: {
     prevEl: '.relaxation__prev',
     nextEl: '.relaxation__next',
@@ -183,49 +205,49 @@ const relaxationSwiper = new Swiper('.relaxation__swiper', {
 
 
   breakpoints: {
-    
+
     748: {
-      slidesPerView: 2,
+      slidesPerView: 2.5,
+      slidesPerGroup: 3,
       spaceBetween: 45,
-      centeredSlides: true,
-    
-    
+      loop: true,
+
+
     },
-   
+
   },
 
 
 });
 const relaxationTwoSwiper = new Swiper('.relaxation__swiper-two', {
-
-  loop: true,
-  initialSlide: 1,
-  centeredSlides: true,
   slidesPerView: 'auto',
-  spaceBetween: 20,
   wrapperClass: 'relaxation__swiper-wrapper-two',
   slideClass: 'relaxation__slide-two',
   speed: 500,
-
+  initialSlide: 0,
+  slidesPerView: 8,
+  slidesPerGroup: 3,
+  spaceBetween: 20,
+  loop: true,
   navigation: {
     prevEl: '.relaxation__prev',
     nextEl: '.relaxation__next',
   },
 
 
-  pagination: {
-    el: '.relaxation__bullets',
-    clickable: true,
-    renderBullet: function (index, className) {
-      return (
-        '<span class="' +
-        className +
-        '">' +
-        (index < 10 ? '0' + (index + 1) : index + 1) +
-        '</span>'
-      )
-    },
-  },
+  // pagination: {
+  //   el: '.relaxation__bullets',
+  //   clickable: true,
+  //   renderBullet: function (index, className) {
+  //     return (
+  //       '<span class="' +
+  //       className +
+  //       '">' +
+  //       (index < 10 ? '0' + (index + 1) : index + 1) +
+  //       '</span>'
+  //     )
+  //   },
+  // },
 
 
 
@@ -235,14 +257,15 @@ const relaxationTwoSwiper = new Swiper('.relaxation__swiper-two', {
 
 
   breakpoints: {
-    
+
     748: {
-      slidesPerView: 3.2,
+      slidesPerView: 4,
+      slidesPerGroup: 3,
       spaceBetween: 45,
-      centeredSlides: false,
-    
+      loop: true,
+
     },
-   
+
   },
 
 
@@ -290,15 +313,15 @@ const feedbackSwiper = new Swiper('.feedback__swiper', {
 
 
   // breakpoints: {
-    
+
   //   748: {
   //     slidesPerView: 3,
   //     slidesPerGroup: 4,
   //     spaceBetween: 45,
   //     centeredSlides: false,
-    
+
   //   },
-   
+
   // },
 
 
@@ -309,12 +332,12 @@ const feedbackSwiper = new Swiper('.feedback__swiper', {
 
 
 const toursSwiper = new Swiper('.tours__swiper', {
-  
+
   slidesPerView: 'auto',
   wrapperClass: 'tours__swiper-wrapper',
   slideClass: 'tours__slide',
   speed: 500,
-  spaceBetween: 64,
+  spaceBetween: 29,
   navigation: {
     prevEl: '.tours__prev',
     nextEl: '.tours__next',
@@ -346,77 +369,3 @@ const toursSwiper = new Swiper('.tours__swiper', {
 
 
 });
-
-
-
-
-
-
-
-ymaps.ready(function () {
-  var myMap = new ymaps.Map('map', {
-          center: [55.657672, 37.529412],
-          zoom: 17
-      }, {
-          searchControlProvider: 'yandex#search'
-      }),
-
-      // Создаём макет содержимого.
-      MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
-          '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
-      ),
-
-      myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-          // hintContent: 'Собственный значок метки',
-          // balloonContent: 'Это красивая метка'
-      }, {
-          // Опции.
-          // Необходимо указать данный тип макета.
-          iconLayout: 'default#image',
-          // Своё изображение иконки метки.
-          iconImageHref: './img/icon/paplavok.svg',
-          // Размеры метки.
-          iconImageSize: [30, 42],
-          // Смещение левого верхнего угла иконки относительно
-          // её "ножки" (точки привязки).
-          iconImageOffset: [-5, -38]
-      }),
-
-      myPlacemarkWithContent = new ymaps.Placemark([55.661574, 37.573856], {
-          hintContent: 'Собственный значок метки с контентом',
-          balloonContent: 'А эта — новогодняя',
-          iconContent: '12'
-      }, {
-          // Опции.
-          // Необходимо указать данный тип макета.
-          iconLayout: 'default#imageWithContent',
-          // Своё изображение иконки метки.
-          iconImageHref: 'images/ball.png',
-          // Размеры метки.
-          iconImageSize: [48, 48],
-          // Смещение левого верхнего угла иконки относительно
-          // её "ножки" (точки привязки).
-          iconImageOffset: [-24, -24],
-          // Смещение слоя с содержимым относительно слоя с картинкой.
-          iconContentOffset: [15, 15],
-          // Макет содержимого.
-          iconContentLayout: MyIconContentLayout
-      });
-
-  myMap.geoObjects
-      .add(myPlacemark)
-      .add(myPlacemarkWithContent);
-
-
-
-      map.controls.remove('geolocationControl'); // удаляем геолокацию
-      map.controls.remove('searchControl'); // удаляем поиск
-      map.controls.remove('trafficControl'); // удаляем контроль трафика
-      map.controls.remove('typeSelector'); // удаляем тип
-      map.controls.remove('fullscreenControl'); // удаляем кнопку перехода в полноэкранный режим
-      map.controls.remove('zoomControl'); // удаляем контрол зуммирования
-      map.controls.remove('rulerControl'); // удаляем контрол правил
-      map.behaviors.disable(['scrollZoom']); // отключаем скролл карты (опционально)
-});
-
-

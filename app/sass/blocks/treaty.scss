@@ -46,6 +46,16 @@
         margin-bottom: 2.6rem;
     }
 
+    .link {
+        margin-top: 4rem;
+        &::before {
+            background-image: url(../img/icon/arrownextred.svg);
+        }
+        span {
+            color: #BF2B2B;
+        }
+    }
+
     
      
    

@@ -85,13 +85,15 @@
     }
 
     &__slide {
-        min-width: fit-content;
+        min-width: 73rem;
+        max-width: 73rem;
        
       
     }
 
     &__slide-two {
-        min-width: fit-content;
+        min-width: 73rem;
+        max-width: 73rem;
     
       
     }
@@ -100,7 +102,8 @@
     
 
     &__image {
-        min-width: fit-content;
+        min-width: 73rem;
+        max-width: 73rem;
         height: 34.6rem;
         transition: all 0.2s;
         cursor: pointer;

@@ -271,6 +271,10 @@
         top: 1.1rem;
         background: none;
     }
+
+    .mob {
+        display: none;
+    }
     
     /* Checked */
     .checkbox-other input[type=checkbox]:checked + span:before {

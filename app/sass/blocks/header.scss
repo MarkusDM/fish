@@ -7,6 +7,10 @@
         width: 112.2rem;
     }
 
+    &__btn-block {
+        display: none;
+    }
+
     &__wrapper {
         display: flex;
     }
@@ -41,6 +45,10 @@
             color: #1B1E1F;
                 transition: 0.2s
         }
+    }
+
+    &__mob-phone {
+        display: none;
     }
 
     &__burger {
@@ -232,6 +240,14 @@
             color: #BF2B2B;
         }
         
+    }
+
+    .header__logo {
+        
+        svg {
+            transition: fill 0.25s;
+            fill:#1B1E1F;
+        }
     }
 
     .header__item--phone {

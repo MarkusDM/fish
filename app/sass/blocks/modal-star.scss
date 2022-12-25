@@ -1,0 +1,100 @@
+.modal-star {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.01);
+    backdrop-filter: blur(7px);
+    opacity: 0;
+    z-index: -2;
+    transition: opacity 0.25s;
+    &__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        
+    }
+
+    &__close  {
+        width: 2.5rem;
+        height: 2.5rem;
+        cursor: pointer;
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+    }
+
+    &__content {
+        width: 33.5rem;
+        height: 17.6rem;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 2.2rem;
+        position: relative;
+
+    }
+
+    &__btn {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        border-bottom: 1.5px solid #2C2C2C;
+        margin-top: 2.6rem;
+    }
+
+    &__close {
+        width: 2.5rem;
+        height: 2.5rem;
+        position: absolute;
+        right: 2rem;
+        top: 2rem;
+    }
+
+
+
+    .full-stars {
+        text-align: center;
+    }
+    .full-stars .rating-group {
+        display: inline-flex;
+    }
+    .full-stars input {
+        position: absolute;
+        left: -9999px;
+    }
+    .full-stars label {
+        margin: 0;
+        cursor: pointer;
+    }
+    .full-stars label svg {
+        margin-right: 1.7rem;
+        width: 2.27rem;
+        height: 2.1rem;
+        fill: #BF2B2B;
+        cursor: pointer;
+        transition: fill 0.3s;
+    }
+    .full-stars input:checked ~ label svg {
+        fill: #C9C8D0;
+    }
+    .full-stars .rating-group:hover label svg {
+        fill: #BF2B2B;
+    }
+    .full-stars .rating-group input:hover ~ label svg {
+        fill: #C9C8D0;
+    }
+}
+
+
+.modal-star-active {
+    opacity: 1;
+    z-index: 101;
+}

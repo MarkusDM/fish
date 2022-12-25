@@ -86,6 +86,40 @@ $(document).ready(function() {
         }
     });
 
+    // 
+
+
+
+    
+    $('.modal__select').on('click', '.modal__select-head', function() {
+        if ($(this).hasClass('open')) {
+            $(this).removeClass('open');
+            $(this).next().fadeOut();
+        } else {
+            $('.modal__select-head').removeClass('open');
+            $('.modal__select-list').fadeOut();
+            $(this).addClass('open');
+            $(this).next().fadeIn();
+        }
+    });
+
+
+
+
+    $('.modal__select').on('click', '.modal__select-item', function() {
+        $('.modal__select-head').removeClass('open');
+        $(this).parent().fadeOut();
+        $(this).parent().prev().text($(this).text());
+        $(this).parent().prev().prev().val($(this).text());
+    });
+
+    $(document).click(function(e) {
+        if (!$(e.target).closest('.modal__select').length) {
+            $('.modal__select-head').removeClass('open');
+            $('.modal__select-list').fadeOut();
+        }
+    });
+
 
 
 
@@ -98,6 +132,7 @@ $(document).ready(function() {
 
     $(".header__burger").on('click', function() {
         $(".header__nav").toggleClass("open-nav");
+        $(".header__logo").toggleClass("active-logo");
         // $("main").toggleClass("main-none")
     });
 
@@ -116,7 +151,36 @@ $(document).ready(function() {
       });
 
 
+      $('.modal-open').click( function() {
+        $('.modal').addClass('modal-active');
+    });
     
+    $('.modal__close').click( function() {
+        $('.modal').removeClass('modal-active');
+    });
+    
+    $('.open-two').click( function() {
+        $('.modal-two').addClass('modal-two-active');
+    });
+    
+    $('.modal-two__close').click( function() {
+        $('.modal-two').removeClass('modal-two-active');
+    });
+
+
+    $('.open-star').click( function() {
+        $('.modal-star').addClass('modal-star-active');
+    });
+    
+    $('.modal-star__close').click( function() {
+        $('.modal-star').removeClass('modal-star-active');
+    });
+    
+
+    $('.article-card__btn').click(function () {
+        $(this).siblings('.article-card__text').toggleClass('article-card__text--active');
+        $('.article-card__btn').not(this).parent('.article-card__text').removeClass('article-card__text--active');
+      });
 
 
 });
@@ -140,3 +204,6 @@ new AirDatepicker('#airdatepicker', {
         }
     }
 });
+
+
+
