@@ -29,13 +29,15 @@
             line-height: 156%;
             letter-spacing: 0.02em;
             color: #98989B;
-            column-width: 48%;
-            column-count: 2;
-            column-gap: 4%;
-            margin-bottom: 4.2rem;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 4rem;
     
             p {
-                text-indent: 10rem;
+                
+                width: 48%;
+                margin-bottom: 3rem;
                 
             }
     

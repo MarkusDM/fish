@@ -42,14 +42,14 @@
         line-height: 156%;
         letter-spacing: .02em;
         color: #98989b;
-        column-width: 48%;
-        column-count: 2;
-        column-gap: 4%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
         margin-bottom: 5rem;
-        text-align: left;
-
         p {
-            text-indent: 9rem;
+            
+            width: 48%;
+            margin-bottom: 3rem;
             
         }
     }

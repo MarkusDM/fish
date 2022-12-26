@@ -1,4 +1,4 @@
-.modal-two {
+.poap {
     position: fixed;
     top: 0;
     width: 100%;
@@ -57,7 +57,7 @@
     &__block {
         display: flex;
         margin-bottom: 3.2rem;
-        .modal-two__inner {
+        .poap__inner {
             padding-top: 1.2rem;
             input {
                 background: none;
@@ -119,8 +119,8 @@
 }
 
 
-.modal-two-active {
-    z-index: 100;
-    display: block;
+.modal-active-two {
+    z-index: 200;
+    opacity: 1;
     transition: opacity 0.25s;
 }

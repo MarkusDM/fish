@@ -27,8 +27,8 @@
     }
 
     &__content {
-        width: 33.5rem;
-        height: 17.6rem;
+        width: 112rem;
+        height: 34.4rem;
         background: #fff;
         display: flex;
         justify-content: center;
@@ -42,12 +42,12 @@
     &__btn {
         font-style: normal;
         font-weight: 600;
-        font-size: 1.2rem;
+        font-size: 2rem;
         line-height: 1.4rem;
         letter-spacing: 0.05em;
         text-transform: uppercase;
         border-bottom: 1.5px solid #2C2C2C;
-        margin-top: 2.6rem;
+        margin-top: 4.6rem;
     }
 
     &__close {
@@ -75,9 +75,9 @@
         cursor: pointer;
     }
     .full-stars label svg {
-        margin-right: 1.7rem;
-        width: 2.27rem;
-        height: 2.1rem;
+        margin-right: 5.9rem;
+        width: 7.7rem;
+        height: 7.1rem;
         fill: #BF2B2B;
         cursor: pointer;
         transition: fill 0.3s;

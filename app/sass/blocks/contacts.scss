@@ -5,6 +5,8 @@
         width: 112rem;
     }
 
+   
+
     &__wrapper {
         display: flex;
         justify-content: space-between;
@@ -37,6 +39,10 @@
         letter-spacing: 0.02em;
         color: #98989B;
 
+    }
+
+    &__mob-text {
+        display: none;
     }
 
 

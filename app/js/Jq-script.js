@@ -1,4 +1,3 @@
-"use strict";
 
 $(document).ready(function() {
 
@@ -151,7 +150,7 @@ $(document).ready(function() {
       });
 
 
-      $('.modal-open').click( function() {
+    $('.modal-open').click( function() {
         $('.modal').addClass('modal-active');
     });
     
@@ -160,11 +159,11 @@ $(document).ready(function() {
     });
     
     $('.open-two').click( function() {
-        $('.modal-two').addClass('modal-two-active');
+        $('.poap').addClass('modal-active-two');
     });
     
-    $('.modal-two__close').click( function() {
-        $('.modal-two').removeClass('modal-two-active');
+    $('.poap__close').click( function() {
+        $('.poap').removeClass('modal-active-two');
     });
 
 
@@ -180,9 +179,20 @@ $(document).ready(function() {
     $('.article-card__btn').click(function () {
         $(this).siblings('.article-card__text').toggleClass('article-card__text--active');
         $('.article-card__btn').not(this).parent('.article-card__text').removeClass('article-card__text--active');
-      });
+    });
 
 
+$(".content-block").each(function() {
+    let more = $(this).find(".show-more");
+    let hide = $(this).find(".hide-content");
+    hide.hide();
+    more.click(function() {
+        hide.slideToggle();
+        more.text(more.text() == "Скрыть" ? "Подробнее" : "Скрыть");
+    });
+});
+
+      
 });
 
 
@@ -204,6 +214,9 @@ new AirDatepicker('#airdatepicker', {
         }
     }
 });
+
+
+
 
 
 
