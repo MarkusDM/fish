@@ -10,6 +10,10 @@
             padding: 0;
         }
 
+        &__mob-address {
+            display: block;
+        }
+
 
         .active-logo {
             transition: fill 0.25s;
@@ -70,7 +74,7 @@
             width: 37.5rem;
             margin-right: 0;
             position: relative;
-            z-index: 4;
+            z-index: 25;
             margin-left: 5rem;
         }
       
@@ -155,19 +159,18 @@
             margin-right: 0;
             position: absolute;
             bottom: 0;
-            width: 100%;
-            z-index: 2;
+            width: 74%;
+            z-index: 21;
             padding-left: 4rem;
+            padding-right: 4rem;
             left: -200rem;
-            height: auto;
+            height: 160rem;
             transition: all 0.5s;
-            background: #F1F2F3;
+            background: #1B1E1F;
             padding-bottom: 8rem;
             top: 0;
-            padding-top: 16rem;
-            background-image: url(../img/main/framebg.png);
-            background-repeat: no-repeat;
-            background-size: cover;
+            padding-top: 21rem;
+            
             &::after {
                 position: absolute;
                 content:'';
@@ -190,6 +193,80 @@
             flex-direction: column;
             position: relative;
             z-index: 5;
+            padding-bottom: 8rem;
+            border-bottom: 1.5px solid rgba(255, 255, 255, 0.4);
+            margin-bottom: 8rem;
+        }
+
+        &__mob-phone-city,
+        &__mob-phone-tel {
+            font-style: normal;
+            
+            font-size: 2.6rem;
+            line-height: 2.8rem;
+            letter-spacing: 0.05em;
+            margin-bottom: 3.2rem;
+            color: #FFFFFF;
+
+        }
+
+        &__mob-phone-city {
+            font-weight: 500;
+        }
+
+        &__mob-phone-tel {
+            font-weight: 600;
+        }
+
+        &__mob-phone-email {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 2.6rem;
+            line-height: 2.8rem;
+            letter-spacing: 0.05em;
+            margin-bottom: 4.2rem;
+            color: #FFFFFF;
+        }
+
+        &__mob-phone-social {
+            display: flex;
+            
+            a {
+                width: 5.6rem;
+                height: 4.6rem;
+                margin-right: 7rem;
+            }
+
+            a:last-child {
+                margin-right: 0;
+            }
+        }
+
+        &__mob-phone {
+            padding-bottom: 8rem;
+            border-bottom: 1.5px solid rgba(255, 255, 255, 0.4);
+            margin-bottom: 8rem;
+        }
+
+        &__mob-address {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 2.6rem;
+            line-height: 2.8rem;
+            letter-spacing: 0.05em;
+            color: #FFFFFF;
+            display: block;
+            z-index: 13;
+            position: relative;
+            span {
+                display: block;
+                margin-bottom: 2.4rem;
+            }
+        }
+
+        &__mob-address-btn {
+            margin-top: 8rem;
+            text-decoration-line: underline;
         }
 
 
@@ -197,7 +274,7 @@
 
     }
     .header--two {
-        padding-top: 1.1rem;
+        padding-top: 5.2rem;
         position: initial;
         .container {
             width: 100%;
@@ -321,14 +398,14 @@
                 transition: top .25s, transform .25s .25s;
                 top: 0px;
                 transform: rotateZ(-45deg);
-                background-color: #fff;
+                
                 
             }
             span:after {
                 transition: top 0.4s, transform .25s .25s;
                 top: 0px;
                 transform: rotateZ(45deg);
-                background-color: #fff;
+               
                 
             }
         }
@@ -814,6 +891,8 @@
             }
         }
     }
+
+   
     
     .vivo {
         margin-bottom: 6.6rem;
@@ -839,7 +918,10 @@
             &__text {
                 padding-top: 5.8rem;
                 text-align: center;
-
+                letter-spacing: .012em;
+                padding-left: 4.5rem;
+                padding-right: 3rem;
+                word-spacing: 1rem;
                 span {
                     font-weight: 600;
                     font-size: 2.8rem;
@@ -859,6 +941,8 @@
         }
 
         &__mob {
+            letter-spacing: .012em;
+            word-spacing: 1rem;
             display: block;
             font-style: normal;
             font-weight: 400;
@@ -866,8 +950,8 @@
             line-height: 135%;
             letter-spacing: .02em;
             color: #98989b;
-            padding-left: 4.3rem;
-            padding-right: 4rem;
+            padding-left: 4.5rem;
+            padding-right: 3rem;
             /* padding: 0 4rem; */
             margin-top: 8.5rem;
             margin-bottom: 6.7rem;
@@ -1123,7 +1207,7 @@
             letter-spacing: 0.02em;
             font-weight: 400;
             line-height: 130%;
-            margin-bottom: 6.6rem;
+            margin-bottom: 7rem;
             p {
                 text-indent: 0;
                 width: 100%;
@@ -1471,7 +1555,7 @@
             height: 106rem;
             padding: 0 4rem;
             padding-top: 5.7rem;
-            backdrop-filter: blur(4px);
+            backdrop-filter: blur(13px);
         }
     
         &__form-title {
@@ -1991,6 +2075,14 @@
            }
         }
 
+        .desk-image {
+            display: none;
+        }
+
+        .mob-image {
+            display: block;
+        }
+
         .mob {
             display: block;
             width: fit-content;
@@ -1999,7 +2091,7 @@
 
         &__image {
             width: 100%;
-            height: 55.4rem;
+            height: 91.4rem;
             margin-bottom: 15rem;
         }
 
@@ -2028,6 +2120,7 @@
 
         &__top {
             flex-direction: column;
+            padding-bottom: 0;
         }
 
         &__bottom {
@@ -2036,22 +2129,45 @@
 
         &__logo {
             width: 100%;
-            height: 7.6rem;
-            margin-bottom: 9rem;
+            height: 8.8rem;
+            margin-top: 3.2rem;
+            margin-bottom: 10.2rem;
         }
 
         &__nav {
             width: 100%;
-            padding-bottom: 8rem;
+            padding-bottom: 1.5rem;
             border-bottom: 1.5px solid rgba(255, 255, 255, 0.2);
-            margin-bottom: 8rem;
+            margin-bottom: 7.5rem;
         }
 
         &__item {
             text-align: center;
-            font-size: 2.8rem;
+            font-size: 2.6rem;
             line-height: 3.4rem;
-            margin-bottom: 5rem;
+            margin-bottom: 5.6rem;
+        }
+
+        &__item:nth-child(1) {
+            order: 1;
+        }
+        &__item:nth-child(2) {
+            order: 2;
+        }
+        &__item:nth-child(3) {
+            order: 3;
+        }
+        &__item:nth-child(4) {
+            order: 5;
+        }
+        &__item:nth-child(5) {
+            order: 4;
+            margin-bottom: 6rem;
+        }
+
+        &__lists {
+            display: flex;
+            flex-direction: column;
         }
 
         &__top-center-title,
@@ -2063,18 +2179,45 @@
             text-align: center;
         }
 
+        &__top-center-title {
+            display: none;
+        }
+
+        &__top-center-phone {
+            display: none;
+        }
+
+        &__top-center-phone-mob {
+            display: block;
+            font-size: 3rem;
+            line-height: 2.7rem;
+            margin-bottom: 5.2rem;
+            text-align: center;
+            color: #fff;
+
+            span {
+                display: block;
+            }
+        }
+
+        &__top-center-email {
+            margin-top: 1rem;
+        }
+
+       
+
         &__top-socials {
             margin: 0 auto;
 
             a {
-                width: 5.2rem;
-                height: 4.4rem;
+                width: 6.5rem;
+                height: 5.7rem;
                 margin-right: 7rem;
             }
         }
 
         &__top-center {
-            margin-bottom: 12.8rem;
+            margin-bottom: 10.1rem;
         }
 
         &__top-left {
@@ -2082,20 +2225,20 @@
         }
 
         &__top-left-title {
-            font-size: 2.4rem;
+            font-size: 2.6rem;
             line-height: 3rem;
-            margin-bottom: 2rem;
+            margin-bottom: 5rem;
             font-weight: 600;
             text-align: center;
         }
 
         &__top-left-text {
-            font-size: 2.4rem;
-            line-height: 167%;
+            font-size: 2.7rem;
+            line-height: 147%;
             width: 100%;
             text-align: center;
-            margin-bottom: 8rem;
-            padding: 0 20rem;
+            margin-bottom: 6rem;
+            padding: 0 16rem;
         }
 
         &__top-left-form {
@@ -2124,7 +2267,7 @@
         }
 
         &__top-left-btn {
-            font-size: 2.4rem;
+            font-size: 2.8rem;
             line-height: 3rem;
             letter-spacing: 0.05em;
             padding-bottom: 2rem;
@@ -2132,7 +2275,7 @@
         }
 
         &__bottom {
-            padding-top: 8rem;
+            padding-top: 6rem;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -2147,24 +2290,38 @@
             line-height: 167%;
             width: 100%;
             text-align: center;
+            
         }
 
         &__bottom-society {
-            width: 44.4rem;
+            width: 42.4rem;
+            font-size: 2.7rem; 
+            p {
+                line-height: 3.8rem;
+            }
         }
 
         &__bottom-requisites {
             width: 100%;
             line-height: 5rem;
-            margin-bottom: 6rem;
+            margin-bottom: 4rem;
+            margin-top: 4.4rem;
             a {
                 font-size: 3rem;
             line-height: 167%;
             }
+
+            p {
+                margin-bottom: 3.6rem;
+                font-size: 2.7rem;
+                line-height: 6rem;
+            }
         }
 
         &__bottom-address {
-            width: 60.8rem;
+            width: 80.8rem;
+            font-size: 2.8rem;
+            line-height: 158%;
         }
 
         
@@ -2611,20 +2768,22 @@
     }
 
     .about {
+        padding-top: 14.3rem;
         .container {
             width: 100%;
-            padding: 0 3rem;
+            padding-left: 4.5rem;
+            padding-right: 4rem;
         }
 
         &__title {
             width: 100%;
-            margin-bottom: 2.4rem;
+            margin-bottom: 3.4rem;
             strong {
                 font-weight: 800;
-                font-size: 5.5rem;
+                font-size: 5.3rem;
                 line-height: 5.8rem;
-                letter-spacing: 0.02em;
-                margin-bottom: 4rem;
+                letter-spacing: .02em;
+                margin-bottom: 5rem;
             }
             span {
                 font-size: 2.6rem;
@@ -2635,9 +2794,13 @@
         &__text {
             p {
                 text-indent: 0;
-                font-size: 2.6rem;
-                line-height: 135%;
-                margin-bottom: 4rem;
+                font-size: 2.7rem;
+                line-height: 129%;
+                margin-bottom: 15rem;
+            }
+
+            p:last-child {
+                margin-bottom: 0;
             }
         }
 
@@ -2669,22 +2832,22 @@
     .treaty{
         .container {
             width: 100%;
-            padding: 0 3rem;
+            padding: 0 4.5rem;
         }
 
         &__title {
             width: 100%;
             font-weight: 800;
-            font-size: 5.5rem;
-            line-height: 5.8rem;
-            letter-spacing: 0.02em;
-            margin-bottom: 6rem;
+            font-size: 5.4rem;
+            line-height: 5.1rem;
+            letter-spacing: .02em;
+            margin-bottom: 6.9rem;
         }
 
         &__text-title {
             font-size: 3.4rem;
             line-height: 125%;
-            margin-bottom: 3.4rem;
+            margin-bottom: 3.1rem;
         }
 
         &__text-lists {
@@ -2692,7 +2855,7 @@
             margin-bottom: 9.2rem;
 
             li {
-                font-size: 3rem;
+                font-size: 2.8rem;
                 line-height: 167%;
             }
         }
@@ -2713,9 +2876,21 @@
 
 
     .our-tours {
+        padding-top: 14rem;
         .container {
             width: 100%;
             padding: 0;
+        }
+
+        &__mobil-text {
+            display: block;
+            font-weight: 400;
+            font-size: 2.6rem;
+            line-height: 135%;
+            letter-spacing: 0.02em;
+            color: #1B1E1F;
+            padding: 0 4rem;
+            margin-top: 5.6rem;
         }
 
         &__title {
@@ -2848,11 +3023,12 @@
             &__text {
                 font-size: 2.6rem;
                 margin-bottom: 2rem;
+                max-height: 25rem;
             }
 
             &__btn {
                 span {
-                    font-size: 2.6rem;
+                    font-size: 2.8rem;
                 }
             }
 
@@ -3184,6 +3360,7 @@
     }
 
     .map {
+        padding-top: 16rem;
         &__block {
             padding-left: 0;
             background: none;
@@ -3565,6 +3742,45 @@
             filter: grayscale(100%);
             opacity: 0.6;
         }
+    }
+
+    .ceo {
+        margin-bottom: 5.8rem;
+        .container {
+            width: 100%;
+            padding: 0 4rem;
+        }
+
+        &__title {
+            width: 100%;
+            text-align: left;
+            align-items: initial;
+           
+            strong {
+                font-size: 5rem;
+                text-align: left;
+                margin-bottom: 3.6rem;
+                padding-right: 38rem;
+            }
+
+            span {
+                max-width: 100%;
+                text-align: left;
+                font-size: 2.6rem;
+                line-height: 135%;
+            }
+        }
+    }
+
+
+    .tours--ceo {
+        overflow: hidden;
+        background-image: url(../img/tours/mapmob.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 1rem -18rem;
+        margin-bottom: 12.9rem;
+        padding-top: 26rem;
     }
   
     
