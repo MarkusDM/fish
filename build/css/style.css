@@ -2471,35 +2471,39 @@ input[type="number"] {
         -ms-flex-align: center;
             align-items: center;
     margin-bottom: 4.6rem; }
-    .contacts__block .contacts__inner input {
-      background: none;
-      border: none;
-      padding-bottom: 1.1rem;
-      border-bottom: 1px solid #C9C8D0;
-      width: 24.3rem;
-      font-style: normal;
-      font-weight: 600;
-      font-size: 1.6rem;
-      line-height: 2rem;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: #1B1E1F; }
-    .contacts__block .contacts__inner input::-webkit-input-placeholder {
-      color: #1B1E1F; }
-    .contacts__block .contacts__inner input::-moz-placeholder {
-      color: #1B1E1F; }
-    .contacts__block .contacts__inner input:-ms-input-placeholder {
-      color: #1B1E1F; }
-    .contacts__block .contacts__inner input::-ms-input-placeholder {
-      color: #1B1E1F; }
-    .contacts__block .contacts__inner input::placeholder {
-      color: #1B1E1F; }
+    .contacts__block .contacts__inner {
+      position: relative; }
+      .contacts__block .contacts__inner input {
+        background: none;
+        position: relative;
+        border: none;
+        padding-bottom: 1.1rem;
+        border-bottom: 1px solid #C9C8D0;
+        width: 24.3rem;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.6rem;
+        line-height: 2rem;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #1B1E1F; }
+      .contacts__block .contacts__inner input::-webkit-input-placeholder {
+        color: #1B1E1F; }
+      .contacts__block .contacts__inner input::-moz-placeholder {
+        color: #1B1E1F; }
+      .contacts__block .contacts__inner input:-ms-input-placeholder {
+        color: #1B1E1F; }
+      .contacts__block .contacts__inner input::-ms-input-placeholder {
+        color: #1B1E1F; }
+      .contacts__block .contacts__inner input::placeholder {
+        color: #1B1E1F; }
     .contacts__block .contacts__inner:first-child {
       margin-right: 5rem; }
     .contacts__block input::-webkit-calendar-picker-indicator {
       opacity: 0; }
     .contacts__block .calendar {
-      position: relative; }
+      position: absolute;
+      right: 0rem; }
       .contacts__block .calendar::before {
         position: absolute;
         content: '';

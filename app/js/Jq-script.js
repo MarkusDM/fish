@@ -1,7 +1,7 @@
 
-$(document).ready(function() {
+$(document).ready(function () {
 
-    $('.header__select').on('click', '.header__select-head', function() {
+    $('.header__select').on('click', '.header__select-head', function () {
         if ($(this).hasClass('open')) {
             $(this).removeClass('open');
             $(this).next().fadeOut();
@@ -13,14 +13,14 @@ $(document).ready(function() {
         }
     });
 
-    $('.header__select').on('click', '.header__select-item', function() {
+    $('.header__select').on('click', '.header__select-item', function () {
         $('.header__select-head').removeClass('open');
         $(this).parent().fadeOut();
         $(this).parent().prev().text($(this).text());
         $(this).parent().prev().prev().val($(this).text());
     });
 
-    $(document).click(function(e) {
+    $(document).click(function (e) {
         if (!$(e.target).closest('.header__select').length) {
             $('.header__select-head').removeClass('open');
             $('.header__select-list').fadeOut();
@@ -30,7 +30,7 @@ $(document).ready(function() {
 
     // 
 
-    $('.applications__select').on('click', '.applications__select-head', function() {
+    $('.applications__select').on('click', '.applications__select-head', function () {
         if ($(this).hasClass('open')) {
             $(this).removeClass('open');
             $(this).next().fadeOut();
@@ -42,21 +42,21 @@ $(document).ready(function() {
         }
     });
 
-    $('.applications__select').on('click', '.applications__select-item', function() {
+    $('.applications__select').on('click', '.applications__select-item', function () {
         $('.applications__select-head').removeClass('open');
         $(this).parent().fadeOut();
         $(this).parent().prev().text($(this).text());
         $(this).parent().prev().prev().val($(this).text());
     });
 
-    $(document).click(function(e) {
+    $(document).click(function (e) {
         if (!$(e.target).closest('.applications__select').length) {
             $('.applications__select-head').removeClass('open');
             $('.applications__select-list').fadeOut();
         }
     });
 
-    $('.contacts__select').on('click', '.contacts__select-head', function() {
+    $('.contacts__select').on('click', '.contacts__select-head', function () {
         if ($(this).hasClass('open')) {
             $(this).removeClass('open');
             $(this).next().fadeOut();
@@ -71,14 +71,14 @@ $(document).ready(function() {
 
 
 
-    $('.contacts__select').on('click', '.contacts__select-item', function() {
+    $('.contacts__select').on('click', '.contacts__select-item', function () {
         $('.contacts__select-head').removeClass('open');
         $(this).parent().fadeOut();
         $(this).parent().prev().text($(this).text());
         $(this).parent().prev().prev().val($(this).text());
     });
 
-    $(document).click(function(e) {
+    $(document).click(function (e) {
         if (!$(e.target).closest('.contacts__select').length) {
             $('.contacts__select-head').removeClass('open');
             $('.contacts__select-list').fadeOut();
@@ -89,8 +89,8 @@ $(document).ready(function() {
 
 
 
-    
-    $('.modal__select').on('click', '.modal__select-head', function() {
+
+    $('.modal__select').on('click', '.modal__select-head', function () {
         if ($(this).hasClass('open')) {
             $(this).removeClass('open');
             $(this).next().fadeOut();
@@ -105,14 +105,14 @@ $(document).ready(function() {
 
 
 
-    $('.modal__select').on('click', '.modal__select-item', function() {
+    $('.modal__select').on('click', '.modal__select-item', function () {
         $('.modal__select-head').removeClass('open');
         $(this).parent().fadeOut();
         $(this).parent().prev().text($(this).text());
         $(this).parent().prev().prev().val($(this).text());
     });
 
-    $(document).click(function(e) {
+    $(document).click(function (e) {
         if (!$(e.target).closest('.modal__select').length) {
             $('.modal__select-head').removeClass('open');
             $('.modal__select-list').fadeOut();
@@ -123,58 +123,58 @@ $(document).ready(function() {
 
 
 
-    $(function() {
-        $('.header__burger').click(function(){
+    $(function () {
+        $('.header__burger').click(function () {
             $(this).toggleClass('open');
         });
     });
 
-    $(".header__burger").on('click', function() {
+    $(".header__burger").on('click', function () {
         $(".header__nav").toggleClass("open-nav");
         $(".header__logo").toggleClass("active-logo");
         // $("main").toggleClass("main-none")
     });
 
 
-    $(".feedback-form__star").on('click', function() {
+    $(".feedback-form__star").on('click', function () {
         $(this).toggleClass('feedback-form__star--active')
     });
 
 
 
-  
-        
-    $('.rating .star').on('click', function() {
+
+
+    $('.rating .star').on('click', function () {
         $(this).closest('.rating').find('.--selected').removeClass('--selected');
         $(this).toggleClass('--selected');
-      });
+    });
 
 
-    $('.modal-open').click( function() {
+    $('.modal-open').click(function () {
         $('.modal').addClass('modal-active');
     });
-    
-    $('.modal__close').click( function() {
+
+    $('.modal__close').click(function () {
         $('.modal').removeClass('modal-active');
     });
-    
-    $('.open-two').click( function() {
+
+    $('.open-two').click(function () {
         $('.poap').addClass('modal-active-two');
     });
-    
-    $('.poap__close').click( function() {
+
+    $('.poap__close').click(function () {
         $('.poap').removeClass('modal-active-two');
     });
 
 
-    $('.open-star').click( function() {
+    $('.open-star').click(function () {
         $('.modal-star').addClass('modal-star-active');
     });
-    
-    $('.modal-star__close').click( function() {
+
+    $('.modal-star__close').click(function () {
         $('.modal-star').removeClass('modal-star-active');
     });
-    
+
 
     $('.article-card__btn').click(function () {
         $(this).siblings('.article-card__text').toggleClass('article-card__text--active');
@@ -182,38 +182,86 @@ $(document).ready(function() {
     });
 
 
-$(".content-block").each(function() {
-    let more = $(this).find(".show-more");
-    let hide = $(this).find(".hide-content");
-    hide.hide();
-    more.click(function() {
-        hide.slideToggle();
-        more.text(more.text() == "Скрыть" ? "Подробнее" : "Скрыть");
+    $(".content-block").each(function () {
+        let more = $(this).find(".show-more");
+        let hide = $(this).find(".hide-content");
+        hide.hide();
+        more.click(function () {
+            hide.slideToggle();
+            more.text(more.text() == "Скрыть" ? "Подробнее" : "Скрыть");
+        });
     });
-});
-
-      
-});
 
 
 
+    $('.modal-star__btn').click(function () {
 
-new AirDatepicker('#airdatepicker', {
+        $('.first-checked').prop('checked', true);
+        $('.modal-star').removeClass("modal-star-active");
+    });
+
+
+    var enabledDays = ['2022-12-29', '2022-12-19', '2022-12-13'];
+    new AirDatepicker('.airdatepicker', {
     isMobile: true,
     autoClose: true,
-    onRenderCell({date, cellType}) {
-        // Disable all 12th dates in month
-        if (cellType === 'day') {
-            if (date.getDate() === 12) {
-                return {
-                    disabled: true,
-                    classes: 'disabled-class'
-                   
-                };
+    dateFormat: 'dd.MM.yyyy',
+    onRenderCell: function onRenderCell({date, cellType}) {
+        if (cellType == 'day') {
+            var day = (date.getFullYear() + '-' + (('0' + (date.getMonth() + 1)).slice(-2)) + '-' + (('0' + date.getDate()).slice(-2)));
+            var isDisabled = enabledDays.indexOf(day) == -1;
+            return {
+                
+                disabled: !isDisabled
+               
             }
         }
     }
+
+
+
+    
+
+
+    
+    });
+
+    new AirDatepicker('#airdatepicker', {
+        isMobile: true,
+        autoClose: true,
+        dateFormat: 'dd.MM.yyyy',
+        onRenderCell: function onRenderCell({date, cellType}) {
+            if (cellType == 'day') {
+                var day = (date.getFullYear() + '-' + (('0' + (date.getMonth() + 1)).slice(-2)) + '-' + (('0' + date.getDate()).slice(-2)));
+                var isDisabled = enabledDays.indexOf(day) == -1;
+                return {
+                    
+                    disabled: !isDisabled
+                    
+                }
+            }
+        }
+    
+    
+    
+        
+    
+    
+        
+        });
+
+
 });
+
+
+
+    
+   
+
+
+
+
+
 
 
 

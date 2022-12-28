@@ -74,8 +74,10 @@
         align-items: center;
         margin-bottom: 4.6rem;
         .contacts__inner {
+            position: relative;
             input {
                 background: none;
+                position: relative;
                 border: none;
                 padding-bottom: 1.1rem;
                 border-bottom: 1px solid #C9C8D0;
@@ -104,7 +106,8 @@
 
 
         .calendar{
-            position: relative;
+            position: absolute;
+            right: 0rem;
             &::before {
                 position: absolute;
                 content:'';
