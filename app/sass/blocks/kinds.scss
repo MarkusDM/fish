@@ -173,6 +173,9 @@
      margin-right: 1.7rem;
      transform: rotate(180deg);
     }
+
+
+  
     
     .rating .star:last-child {
       margin-right: 0;
@@ -187,6 +190,13 @@
       width: 2rem;
       height: 2rem;
      
+
+      
+    }
+
+
+    .rating .star--red::before {
+        background-image: url(../img/feedback/starred.svg);
     }
     
     // .rating .star.--selected,

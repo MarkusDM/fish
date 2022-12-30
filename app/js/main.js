@@ -55,7 +55,7 @@ const boatsTwoSwiper = new Swiper('.boats__swiper-two', {
 
   wrapperClass: 'boats__swiper-wrapper-two',
   slideClass: 'boats__slide-two',
-  speed: 500,
+  speed: 600,
   initialSlide: 0,
   slidesPerView: 8,
   slidesPerGroup: 3,
@@ -223,7 +223,7 @@ const relaxationTwoSwiper = new Swiper('.relaxation__swiper-two', {
   slidesPerView: 'auto',
   wrapperClass: 'relaxation__swiper-wrapper-two',
   slideClass: 'relaxation__slide-two',
-  speed: 500,
+  speed: 600,
   initialSlide: 0,
   slidesPerView: 8,
   slidesPerGroup: 3,
