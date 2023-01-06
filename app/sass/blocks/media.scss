@@ -4,7 +4,8 @@
     }
     .header {
         padding-top: 1.1rem;
-        position: initial;
+        position: fixed;
+         width: 100%;
         .container {
             width: 100%;
             padding: 0;
@@ -129,7 +130,9 @@
 
         .open-nav {
             left: 0;
-            top: 0;
+            top: -100%;
+            height: 130vh;
+            min-height: 130vh;
         }
     
     
@@ -164,7 +167,7 @@
             padding-left: 4rem;
             padding-right: 4rem;
             left: -200rem;
-            height: 160rem;
+            height: 100%;
             transition: all 0.5s;
             background: #1B1E1F;
             padding-bottom: 8rem;

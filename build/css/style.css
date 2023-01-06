@@ -3932,7 +3932,8 @@ input[type="number"] {
     background: #F5F5F5; }
   .header {
     padding-top: 1.1rem;
-    position: initial; }
+    position: fixed;
+    width: 100%; }
     .header .container {
       width: 100%;
       padding: 0; }
@@ -4050,7 +4051,9 @@ input[type="number"] {
           transition: transform .25s, top .25s .25s, -webkit-transform .25s; }
     .header .open-nav {
       left: 0;
-      top: 0; }
+      top: -100%;
+      height: 130vh;
+      min-height: 130vh; }
     .header__burger.open span {
       -webkit-transition-duration: 0.1s;
               transition-duration: 0.1s;
@@ -4083,7 +4086,7 @@ input[type="number"] {
       padding-left: 4rem;
       padding-right: 4rem;
       left: -200rem;
-      height: 160rem;
+      height: 100%;
       -webkit-transition: all 0.5s;
       transition: all 0.5s;
       background: #1B1E1F;

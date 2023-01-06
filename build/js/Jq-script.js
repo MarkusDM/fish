@@ -221,9 +221,6 @@ $(document).ready(function () {
 
 
     
-
-
-    
     });
 
     new AirDatepicker('#airdatepicker', {

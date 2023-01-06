@@ -39,7 +39,7 @@ const boatsSwiper = new Swiper('.boats__swiper', {
     748: {
 
 
-      slidesPerView: 2.5,
+      slidesPerView: 2.3,
       slidesPerGroup: 3,
       spaceBetween: 45,
       loop: true,
