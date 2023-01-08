@@ -57,7 +57,7 @@ const boatsTwoSwiper = new Swiper('.boats__swiper-two', {
   slideClass: 'boats__slide-two',
   speed: 600,
   initialSlide: 0,
-  slidesPerView: 8,
+  slidesPerView: 2,
   slidesPerGroup: 3,
   loop: true,
  
@@ -225,7 +225,7 @@ const relaxationTwoSwiper = new Swiper('.relaxation__swiper-two', {
   slideClass: 'relaxation__slide-two',
   speed: 600,
   initialSlide: 0,
-  slidesPerView: 8,
+  slidesPerView: 2,
   slidesPerGroup: 3,
   spaceBetween: 20,
   loop: true,
