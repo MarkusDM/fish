@@ -7,6 +7,8 @@
         width: 112.2rem;
     }
 
+  
+
     &__mob-address {
         display: none;
     }
@@ -232,6 +234,10 @@
             padding: 0;
             border: none;
         }
+    }
+
+    &__item--mob {
+        display: none;
     }
 }
 

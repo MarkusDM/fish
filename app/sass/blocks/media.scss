@@ -15,6 +15,14 @@
             display: block;
         }
 
+        &__item--mob {
+            display: block;
+        }
+
+        &__item--desk {
+            display: none;
+        }
+
 
         .active-logo {
             transition: fill 0.25s;
@@ -187,9 +195,12 @@
         }
 
         &__item {
-            font-size: 3rem;
-            margin-bottom: 7rem;
+            font-weight: 600;
+            font-size: 2.5rem;
+            line-height: 2.8rem;
             width: fit-content;
+            margin-bottom: 6rem;
+            font-family: 'Gilroy',sans-serif;
         }
 
         &__lists {
@@ -461,8 +472,10 @@
     }
     .black-link {
         padding-right: 3.4rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
         span {
-            font-size: 2.7rem;
+            font-size: 2.8rem!important;
             line-height: 3rem;
         }
        
@@ -478,7 +491,7 @@
         border-radius: 50%;
         position: fixed;
         z-index: 10;
-        top: 92%;
+        top: 89%;
         right: 4rem;
         img {
             width: 5rem;
@@ -781,7 +794,7 @@
                 display: block;
                
                 font-weight: 600;
-                font-size: 2.4rem;
+                font-size: 2.8rem;
                 line-height: 3rem;
                 letter-spacing: 0.05em;
                 text-transform: uppercase;
@@ -898,7 +911,8 @@
    
     
     .vivo {
-        margin-bottom: 6.6rem;
+        margin-bottom: 16rem;
+
         .container {
             width: 100%;
             padding: 0;
