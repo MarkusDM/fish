@@ -659,6 +659,9 @@ input[type="number"] {
     text-transform: uppercase;
     color: #1B1E1F; }
 
+.swiper-wrapper {
+  height: initial !important; }
+
 .mob {
   display: none; }
 
