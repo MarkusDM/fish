@@ -161,6 +161,112 @@
         background-color: rgba(224, 229, 231, 0.5);
     }
 
+
+
+
+
+
+
+
+
+
+
+
+
+    &__select-two {
+        padding-top: 0.1rem;
+        position: relative;
+        display: block;
+        background: none;
+        font-weight: 700;
+        font-size: 1.6rem;
+        line-height: 1.9rem;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #fff;
+        border: none;
+        padding-right: 1.2rem;
+        padding-bottom: 1rem;
+        &:hover {
+           
+
+            .header__select-head-two {
+                color: #1B1E1F;
+                transition: 0.2s
+            }
+        }
+        
+    }
+    
+    &__select-head-two {
+        width: 100%;
+        max-width: 100%;
+        font-weight: 700;
+        font-size: 1.6rem;
+        line-height: 1.9rem;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #fff;
+        cursor: pointer;
+       
+    }
+
+
+    
+    &__select-head-two::after {
+        width: 1rem;
+        height: 1rem;
+        background: url("../img/icon/arrowdown.svg") no-repeat center / cover;
+        position: absolute;
+        right: -0.5rem;
+        transform: translateY(50%);
+        content: '';
+        display: block;
+        transition: .2s ease-in;
+        top: 0rem;
+    }
+    
+    &__select-head-two.open::after {
+        transform: translateY(50%) rotate(180deg);
+    }
+    
+    &__select-list-two {
+        border-top: 1.2px solid #fff;
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        width: 100%;
+        max-height: 20.5rem;
+        overflow-x: hidden;
+        overflow-y: auto;
+        z-index: 2;
+        margin: 0;
+        padding: 0;
+        font-weight: 700;
+        font-size: 1.4rem;
+        line-height: 1.9rem;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #fff;
+        overscroll-behavior: contain;
+    }
+    
+  
+    
+    &__select-list-two &__select-item-two {
+        position: relative;
+        padding: 1.2rem 1rem;
+        cursor: pointer;
+        list-style-type: none;
+    }
+    
+    &__select-list-two &__select-item-two:hover {
+        background-color: rgba(224, 229, 231, 0.5);
+    }
+
+
     
 
 
@@ -306,6 +412,62 @@
     .header__select-list {
         color: #1B1E1F;
     }
+
+
+
+      .header__select-head::after  {
+        background: url(../img/icon/arrowdownblack.svg) no-repeat center / cover;;
+    }
+
+    .header__select-head {
+        &:hover  {
+            color: #BF2B2B;
+        }
+    }
+
+    .header__select  {
+        color: #1B1E1F;
+
+    }
+
+
+    .header__select-head {
+        color: #1B1E1F;
+    }
+
+    .header__select-list {
+        color: #1B1E1F;
+    }
+
+
+    // 
+
+
+    .header__select-head-two::after  {
+        background: url(../img/icon/arrowdownblack.svg) no-repeat center / cover;;
+    }
+
+    .header__select-head-two {
+        &:hover  {
+            color: #BF2B2B;
+        }
+    }
+
+    .header__select-two  {
+        color: #1B1E1F;
+
+    }
+
+
+    .header__select-head-two {
+        color: #1B1E1F;
+    }
+
+    .header__select-list-two {
+        color: #1B1E1F;
+    }
+
+
 
 
 

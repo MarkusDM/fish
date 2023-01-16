@@ -931,6 +931,79 @@ input[type="number"] {
     list-style-type: none; }
   .header__select-list .header__select-item:hover {
     background-color: rgba(224, 229, 231, 0.5); }
+  .header__select-two {
+    padding-top: 0.1rem;
+    position: relative;
+    display: block;
+    background: none;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #fff;
+    border: none;
+    padding-right: 1.2rem;
+    padding-bottom: 1rem; }
+    .header__select-two:hover .header__select-head-two {
+      color: #1B1E1F;
+      -webkit-transition: 0.2s;
+      transition: 0.2s; }
+  .header__select-head-two {
+    width: 100%;
+    max-width: 100%;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer; }
+  .header__select-head-two::after {
+    width: 1rem;
+    height: 1rem;
+    background: url("../img/icon/arrowdown.svg") no-repeat center/cover;
+    position: absolute;
+    right: -0.5rem;
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+    content: '';
+    display: block;
+    -webkit-transition: .2s ease-in;
+    transition: .2s ease-in;
+    top: 0rem; }
+  .header__select-head-two.open::after {
+    -webkit-transform: translateY(50%) rotate(180deg);
+            transform: translateY(50%) rotate(180deg); }
+  .header__select-list-two {
+    border-top: 1.2px solid #fff;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-height: 20.5rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 2;
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #fff;
+    -ms-scroll-chaining: none;
+        overscroll-behavior: contain; }
+  .header__select-list-two .header__select-item-two {
+    position: relative;
+    padding: 1.2rem 1rem;
+    cursor: pointer;
+    list-style-type: none; }
+  .header__select-list-two .header__select-item-two:hover {
+    background-color: rgba(224, 229, 231, 0.5); }
   .header__down-item {
     color: #1B1E1F;
     display: block;
@@ -1023,6 +1096,36 @@ input[type="number"] {
   color: #1B1E1F; }
 
 .header--two .header__select-list {
+  color: #1B1E1F; }
+
+.header--two .header__select-head::after {
+  background: url(../img/icon/arrowdownblack.svg) no-repeat center/cover; }
+
+.header--two .header__select-head:hover {
+  color: #BF2B2B; }
+
+.header--two .header__select {
+  color: #1B1E1F; }
+
+.header--two .header__select-head {
+  color: #1B1E1F; }
+
+.header--two .header__select-list {
+  color: #1B1E1F; }
+
+.header--two .header__select-head-two::after {
+  background: url(../img/icon/arrowdownblack.svg) no-repeat center/cover; }
+
+.header--two .header__select-head-two:hover {
+  color: #BF2B2B; }
+
+.header--two .header__select-two {
+  color: #1B1E1F; }
+
+.header--two .header__select-head-two {
+  color: #1B1E1F; }
+
+.header--two .header__select-list-two {
   color: #1B1E1F; }
 
 .main {
@@ -1520,6 +1623,21 @@ input[type="number"] {
     .present-card__image img {
       width: 100%;
       height: 100%; }
+  .present-card__image--one {
+    width: 35.195rem;
+    height: 36.7rem;
+    position: relative;
+    top: -4rem; }
+  .present-card__image--two {
+    width: 34rem;
+    height: 26.5rem;
+    position: relative;
+    top: 0rem; }
+  .present-card__image--three {
+    width: 38.23rem;
+    height: 25.5rem;
+    position: relative;
+    top: 0rem; }
   .present-card__text {
     width: 100%;
     padding-top: 3rem;
@@ -1714,6 +1832,9 @@ input[type="number"] {
 
 .tours-card {
   width: 34.2rem; }
+  .tours-card:hover .tours-card__link::before {
+    -webkit-transform: translateX(0.4rem);
+            transform: translateX(0.4rem); }
   .tours-card__inner {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1774,9 +1895,6 @@ input[type="number"] {
     padding-right: 6rem;
     color: #1B1E1F;
     position: relative; }
-    .tours-card__link:hover::before {
-      -webkit-transform: translateX(0.4rem);
-              transform: translateX(0.4rem); }
     .tours-card__link::before {
       position: absolute;
       content: '';
@@ -3001,12 +3119,9 @@ input[type="number"] {
       line-height: 156%;
       letter-spacing: 0.02em;
       color: #98989B; }
-  .our-tours #map {
+  .our-tours #map-tours {
     height: 104.5rem;
     width: 100%; }
-    .our-tours #map img {
-      width: 100%;
-      height: 100%; }
   .our-tours__mobil-text {
     display: none; }
 
@@ -3988,6 +4103,8 @@ input[type="number"] {
     .header__item--phone {
       display: none; }
     .header__select {
+      display: none; }
+    .header__select-two {
       display: none; }
     .header__logo {
       height: 5.6rem;

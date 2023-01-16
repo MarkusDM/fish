@@ -37,16 +37,14 @@
                     <li class="header__item"><a href="">Туры</a></li>
                     <li class="header__item header__item--mob"><a href="">Отзывы</a></li>
                     <li class="header__item"><a href="">Контакты</a></li>
-                    <li class="header__item header__item--phone">
-                        <ul class="header__down">
-                            <li class="header__down-item"> <a href="">8 496 335 85 22</a></li>
-                            <li class="header__down-item"> <a href="">8 496 335 85 22</a></li>
-                            <li class="header__down-item"> <a href="">8 496 335 85 22</a></li>
+                    <div class="header__select-two">
+                        <input class="header__select-input-two" type="hidden" name="">
+                        <div class="header__select-head-two">8 496 335 85 22</div>
+                        <ul class="header__select-list-two">
+                            <li class="header__select-item-two">8 496 335 85 22</li>
+                            <li class="header__select-item-two">8 496 335 85 22</li>
                         </ul>
-                        <a href="">8 496 335 85 22</a>
-                        
-
-                    </li>
+                    </div>
                 </ul>
                  <ul class="header__mob-phone">
                     <div class="header__mob-phone-city">Москва</div>
@@ -664,7 +662,7 @@
           
             <article class="present-card">
                 <div class="present-card__block">
-                    <div class="present-card__image">
+                    <div class="present-card__image present-card__image--one">
                         <img src="./img/present/cep2.png" alt="">
                     </div>
                 </div>
@@ -676,7 +674,7 @@
             </article>
             <article class="present-card">
                 <div class="present-card__block">
-                    <div class="present-card__image">
+                    <div class="present-card__image present-card__image--two">
                         <img src="./img/present/cep1.png" alt="">
                     </div>
                 </div>
@@ -690,7 +688,7 @@
             <!--  -->
             <article class="present-card">
                 <div class="present-card__block">
-                    <div class="present-card__image">
+                    <div class="present-card__image present-card__image--three">
                         <img src="./img/present/cep3.png" alt="">
                     </div>
                 </div>
@@ -787,7 +785,7 @@
         </div>
         <div class="tours__wrapper">
             <div class="tours__cards">
-                <article class="tours-card">
+                <a href="#" class="tours-card">
                     <div class="tours-card__inner">
                         <div class="tours-card__number">01</div>
                         <div class="tours-card__name">рыбалка</div>
@@ -795,13 +793,13 @@
                     <div class="tours-card__day">Полный день</div>
                     <div class="tours-card__wrap">
                         <div class="tours-card__price">110 000 ₽</div>
-                        <a href="" class="tours-card__link">
+                        <div class="tours-card__link">
                             <span>описание</span>
-                        </a>
+                        </div>
                     </div>
-                </article>
+                </a>
                 <!--  -->
-                <article class="tours-card">
+                <a href="#" class="tours-card">
                     <div class="tours-card__inner">
                         <div class="tours-card__number">02</div>
                         <div class="tours-card__name">крабовое сафари</div>
@@ -809,13 +807,13 @@
                     <div class="tours-card__day">пол дня</div>
                     <div class="tours-card__wrap">
                         <div class="tours-card__price">110 000 ₽</div>
-                        <a href="" class="tours-card__link">
+                        <div class="tours-card__link">
                             <span>описание</span>
-                        </a>
+                        </div>
                     </div>
-                </article>
+                </a>
                 <!--  -->
-                <article class="tours-card">
+                <a href="#" class="tours-card">
                     <div class="tours-card__inner">
                         <div class="tours-card__number">03</div>
                         <div class="tours-card__name">рыбалка</div>
@@ -823,11 +821,11 @@
                     <div class="tours-card__day">3 часа</div>
                     <div class="tours-card__wrap">
                         <div class="tours-card__price">110 000 ₽</div>
-                        <a href="" class="tours-card__link">
+                        <div  class="tours-card__link">
                             <span>описание</span>
-                        </a>
+                        </div>
                     </div>
-                </article>
+                </a>
             </div>
             <!-- tables -->
             <div class="tours__map">
@@ -1537,6 +1535,7 @@
 <a href="#" class="call">
     <img src="./img/icon/calling.svg" alt="">
 </a>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
 <script src="./js/jquery-3.5.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>

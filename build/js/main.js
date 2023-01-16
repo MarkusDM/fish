@@ -372,3 +372,71 @@ const toursSwiper = new Swiper('.tours__swiper', {
 
 
 
+
+// ymaps.ready(init);
+
+// function init () {
+//     var myMap = new ymaps.Map('map-tours', {
+//             center: [53.024263, 158.643504],
+//             zoom: 10
+//         }, {
+//             searchControlProvider: 'yandex#search'
+//         }),
+//         objectManager = new ymaps.ObjectManager({
+//             // Чтобы метки начали кластеризоваться, выставляем опцию.
+//             clusterize: true,
+//             // ObjectManager принимает те же опции, что и кластеризатор.
+//             gridSize: 32,
+//             clusterDisableClickZoom: true,
+//             iconLayout: 'default#image',
+//             iconImageClipRect: [[0,0], [26, 46]],
+//             iconImageHref: './img/paplavok.svg',
+//             iconImageSize: [15, 27],
+//             iconImageOffset: [-15, -27]
+//         });
+
+//     // Чтобы задать опции одиночным объектам и кластерам,
+//     // обратимся к дочерним коллекциям ObjectManager.
+//     objectManager.objects.options.set(objectManager.iconLayout);
+//     objectManager.clusters.options.set(objectManager.iconLayout);
+//     myMap.geoObjects.add(objectManager);
+
+//     $.ajax({
+//         url: "data.json"
+//     }).done(function(data) {
+//         objectManager.add(data);
+//     });
+
+// }
+
+
+
+
+ymaps.ready(function(){
+  if ($('div').is('#map-tours')) {
+    var i;
+    var pl;
+    var coords = [[53.037514, 158.372897],[52.814409, 156.307943],[53.139993, 158.377810],[53.000537, 158.652654]];
+    
+    var myMap = new ymaps.Map("map-tours", {
+      center: [53.089071, 158.356106],
+      zoom: 11,
+      controls: ['zoomControl']
+
+      
+    });
+    
+    for (i = 0; i < coords.length; ++i) {
+      pl = new ymaps.Placemark(coords[i], {}, {
+          iconLayout: 'default#image',
+          iconImageHref: 'img/icon/paplavok.svg',
+          iconImageSize: [50, 50],
+          iconImageOffset: [-5, -38]
+      });
+      myMap.geoObjects.add(pl);
+      console.log(coords[i]);
+     
+    }
+
+  };
+});

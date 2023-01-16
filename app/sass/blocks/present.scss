@@ -39,6 +39,28 @@
         }
     }
 
+    &__image--one {
+        width: 35.195rem;
+        height: 36.7rem;
+        position: relative;
+        top: -4rem;
+    }
+
+
+    &__image--two {
+        width: 34rem;
+        height: 26.5rem;
+        position: relative;
+        top: 0rem;
+    }
+
+    &__image--three {
+        width: 38.23rem;
+        height: 25.5rem;
+        position: relative;
+        top: 0rem;
+    }
+
     &__text {
         width: 100%;
         padding-top: 3rem;

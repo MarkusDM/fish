@@ -159,7 +159,17 @@
 
 .tours-card {
     width: 34.2rem;
+    &:hover {
 
+        .tours-card__link {
+            &::before {
+                transform: translateX(0.4rem);
+        
+            }
+        }
+
+       
+    }
     &__inner {
         display: flex;
         margin-bottom: 1.2rem;
@@ -235,12 +245,6 @@
         padding-right: 6rem;
         color: #1B1E1F;
         position: relative;
-        &:hover {
-            &::before {
-                transform: translateX(0.4rem);
-        
-            }
-        }
         &::before {
             position: absolute;
             content: '';
