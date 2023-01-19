@@ -8,14 +8,16 @@
         display: none;
     }
     &__fullscreen {
-        
+        align-items: center;
+        display: flex;
         position: absolute;
         z-index: 0;
         top: 0;
         left: 0;
         width: 100%;
         min-height: 100vh;
-        // background: url(../img/main/bg.png) center / cover no-repeat fixed;
+        max-height: 100vh;
+        background: url(../img/main/bg.png) center / cover no-repeat ;
         &::after {
             position: absolute;
             content:'';
@@ -35,7 +37,7 @@
         position: relative;
         z-index: 4;
         padding-left: 40rem;
-        padding-top: 18rem;
+        padding-top: 12vh;
     }
 
     &__feedback {

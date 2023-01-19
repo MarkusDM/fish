@@ -147,13 +147,14 @@
     }
     
     &__select-list {
+        border-top: 1px solid #C9C8D0;
         display: none;
         position: absolute;
         top: 100%;
         left: 0;
         right: 0;
         width: 100%;
-        background: #fff;
+        background-color: hsla(0, 0%, 11%, .95);
         max-height: 20.5rem;
         overflow-x: hidden;
         overflow-y: auto;
@@ -165,8 +166,9 @@
         line-height: 1.9rem;
         letter-spacing: 0.1em;
         text-transform: uppercase;
-        color: #141414;
+        color: #fff;
         overscroll-behavior: contain;
+        
     }
     
   
@@ -176,10 +178,13 @@
         padding: 1rem 1.5rem;
         cursor: pointer;
         list-style-type: none;
+        padding-left: 0;
+        transition: 0.2s
     }
     
     &__select-list &__select-item:hover {
-        background-color: rgba(224, 229, 231, 0.5);
+        background-color: hsla(0, 0%, 20%, .95);
+        transition: 0.2s
     }
 
     &__btn {

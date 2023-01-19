@@ -155,10 +155,14 @@
         padding: 1rem 1.5rem;
         cursor: pointer;
         list-style-type: none;
+        transition: 0.2s;
+        padding-left: 0;
+        
     }
     
     &__select-list &__select-item:hover {
-        background-color: rgba(224, 229, 231, 0.5);
+        color: #1B1E1F;
+        transition: 0.2s
     }
 
 
@@ -245,7 +249,7 @@
         margin: 0;
         padding: 0;
         font-weight: 700;
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         line-height: 1.9rem;
         letter-spacing: 0.1em;
         text-transform: uppercase;
@@ -257,13 +261,18 @@
     
     &__select-list-two &__select-item-two {
         position: relative;
-        padding: 1.2rem 1rem;
+        padding: 1.2rem 0rem;
         cursor: pointer;
         list-style-type: none;
+        transition: 0.2s;
+        padding-left: 0;
+        padding-right: 0;
+        text-align: left;
     }
     
     &__select-list-two &__select-item-two:hover {
-        background-color: rgba(224, 229, 231, 0.5);
+        color: #1B1E1F;
+        transition: 0.2s
     }
 
 
@@ -465,6 +474,18 @@
 
     .header__select-list-two {
         color: #1B1E1F;
+    }
+
+
+    .header__select-list-two .header__select-item-two:hover {
+        color: #98989B;
+        transition: 0.2s
+    }
+
+
+    .header__select-list .header__select-item:hover {
+        color: #98989B;
+        transition: 0.2s
     }
 
 

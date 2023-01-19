@@ -231,8 +231,7 @@ $(document).ready(function () {
 
     var enabledDays = ['2022-12-29', '2022-12-19', '2022-12-13'];
     new AirDatepicker('.airdatepicker', {
-    isMobile: true,
-    autoClose: true,
+    position: 'bottom center',
     dateFormat: 'dd.MM.yyyy',
     onRenderCell: function onRenderCell({date, cellType}) {
         if (cellType == 'day') {
