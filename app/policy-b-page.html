@@ -4,24 +4,25 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<link rel="stylesheet" href="./css/air-datepicker.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"/>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=d9808553-8489-4c47-b321-9e5761fb75aa&lang=ru_RU" type="text/javascript"></script>
+	<link rel="stylesheet" href="./css/air-datepicker.css">
+	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 	<link rel="stylesheet" href="./css/style.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Главная</title>
 </head>
 
 <body>
-	@@include('./template/header.html')
+	@@include('./template/header-two.html')
 	
 	
 	<main>
-		@@include('./template/map.html')
-        @@include('./template/applications.html')
-		@@include('./template/offers.html')
+		@@include('./template/policy-b.html')
+		
 	</main>
 	@@include('./template/footer.html')
+	
 </body>
 
 </html>

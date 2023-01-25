@@ -13,13 +13,18 @@
                     <div class="feedback-form__inner">
                         <input type="text" placeholder="Ваше имя">
                     </div>
-                    <div class="feedback-form__inner">
-                        <input type="text" placeholder="+ 7 ___ ___ __ __">
+                    <div class="feedback-form__inner feedback-form__inner--phone">
+                        <select class="js-choice-four form-control"  id="country-four">
+                            <option value="ru">RU +7</option>
+                            <option value="by">BY +375</option>
+                            <option value="kz">KZ +7</option>
+                          </select>
+                        <input type="tel" id="phone-four" placeholder="" class="form-control">
                     </div>
                 </div>
                 <!--  -->
                 <div class="feedback-form__big">
-                    <input type="text" placeholder="ваш отзыв">
+                    <textarea id="text" class="textarea" placeholder="ваш отзыв"></textarea>
                 </div>
                 <div class="feedback-form__stars">
                     <div class="feedback-form__stats-text">ваша оценка:</div>

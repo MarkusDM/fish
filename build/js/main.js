@@ -1,4 +1,4 @@
-"use strict";
+
 
 
 const boatsSwiper = new Swiper('.boats__swiper', {
@@ -110,7 +110,7 @@ boatsTwoSwiper.params.control = boatsSwiper;
 const partnersSwiper = new Swiper('.partners__swiper', {
   // loop: true,
   slidesPerView: 'auto',
-  spaceBetween: 50,
+  
   wrapperClass: 'partners__swiper-wrapper',
   slideClass: 'partners__slide',
   speed: 500,
@@ -148,7 +148,7 @@ const partnersSwiper = new Swiper('.partners__swiper', {
 const partnersSwiperTwo = new Swiper('.partners__swiper-mob', {
   // loop: true,
   slidesPerView: 1,
-  spaceBetween: 50,
+
   wrapperClass: 'partners__swiper-mob-wrapper',
   slideClass: 'partners__swiper-mob-slide',
   speed: 500,
@@ -440,3 +440,27 @@ ymaps.ready(function(){
 
   };
 });
+
+
+Fancybox.bind('[data-fancybox="relax-image"]', {
+  caption: function (fancybox, carousel, slide) {
+    return (
+      `${slide.index + 1} / ${carousel.slides.length} <br />` + slide.caption
+    );
+  },
+});
+
+
+Fancybox.bind('[data-fancybox="boats-image"]', {
+  caption: function (fancybox, carousel, slide) {
+    return (
+      `${slide.index + 1} / ${carousel.slides.length} <br />` + slide.caption
+    );
+  },
+});
+
+
+
+
+
+

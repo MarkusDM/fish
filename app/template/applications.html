@@ -14,6 +14,7 @@
                             <li class="applications__select-item">Рыбалка на кита </li>
                         </ul>
                     </div>
+                    <div class="applications__hint">сначала заполните тур</div>
                 </div>
                 <div class="applications__inner">
                     <label class="calendar" for=""></label>
@@ -25,8 +26,13 @@
                 <div class="applications__inner">
                     <input type="text" placeholder="Ваше имя">
                 </div>
-                <div class="applications__inner">
-                    <input type="text" placeholder="+ 7 ___ ___ __ __">
+                <div class="applications__inner applications__inner--phone">
+                    <select class="js-choice form-control"  id="country">
+                        <option value="ru">RU +7</option>
+                        <option value="by">BY +375</option>
+                        <option value="kz">KZ +7</option>
+                      </select>
+                    <input type="tel" id="phone" placeholder="" class="form-control">
                 </div>
             </div>
             <!--  -->

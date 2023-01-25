@@ -64,7 +64,7 @@
                 border: none;
                 padding-bottom: 1.1rem;
                 border-bottom: 1px solid #C9C8D0;
-                width: 24.3rem;
+                width: 25.3rem;
                 font-style: normal;
                 font-weight: 600;
                 font-size: 1.6rem;
@@ -111,6 +111,12 @@
         margin-bottom: 0rem;
     }
 
+    &__hint {
+        font-size: 1.6rem;
+        padding-top: 1rem;
+        position: absolute;
+    }
+
 
 
     &__select {
@@ -127,7 +133,7 @@
         border: none;
         padding-bottom: 1.1rem;
         border-bottom: 1px solid #C9C8D0;
-        width: 24.3rem;
+        width: 25.6rem;
         
     }
     
@@ -288,6 +294,97 @@
     .checkbox-other input[type=checkbox]:disabled + span:before {
         filter: grayscale(100%);
         opacity: 0.6;
+    }
+
+
+
+    .choices {
+        padding-bottom: 0;
+        position: relative;
+        width: 8.3rem;
+        border: none;
+        border-bottom: 1px solid #C9C8D0;
+
+        &__inner {
+            padding: 0;
+            background: none;
+            border: none;
+            font-weight: 700;
+            font-size: 1.6rem;
+            line-height: 1.9rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #1B1E1F;
+        }
+
+        
+    }
+
+    .choices__inner {}
+
+
+    
+
+    .hoices__input .choices__input--cloned  {
+        display: none;
+    }
+
+    .choices__item {
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+       
+    }
+
+    .choices__item--choice {
+        cursor: pointer;
+        &:hover {
+            background-color: hsla(0, 0%, 20%, .95);
+            transition: 0.2s
+            
+        }
+    }
+
+
+    .choices__list--dropdown {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background-color: #fff;
+        max-height: 20.5rem;
+        overflow-x: hidden;
+        overflow-y: auto;
+        z-index: 2;
+        margin: 0;
+        padding: 0;
+        font-weight: 700;
+        font-size: 1.6rem;
+        line-height: 1.9rem;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #1B1E1F;
+        overscroll-behavior: contain;
+    }
+
+    .is-active {
+        display: block;
+    }
+  
+
+    &__inner--phone {
+        display: flex;
+        flex-direction: initial;
+        padding-top: 0.1rem!important;
+        input {
+            width: 17.6rem!important;
+            padding-bottom: 0!important;
+        }
+    }
+
+    .choices .is-open .is-focused {
+        border: none;
     }
 }
 

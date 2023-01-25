@@ -447,13 +447,18 @@
                     <div class="feedback-form__inner">
                         <input type="text" placeholder="Ваше имя">
                     </div>
-                    <div class="feedback-form__inner">
-                        <input type="text" placeholder="+ 7 ___ ___ __ __">
+                    <div class="feedback-form__inner feedback-form__inner--phone">
+                        <select class="js-choice-four form-control"  id="country-four">
+                            <option value="ru">RU +7</option>
+                            <option value="by">BY +375</option>
+                            <option value="kz">KZ +7</option>
+                          </select>
+                        <input type="tel" id="phone-four" placeholder="" class="form-control">
                     </div>
                 </div>
                 <!--  -->
                 <div class="feedback-form__big">
-                    <input type="text" placeholder="ваш отзыв">
+                    <textarea id="text" class="textarea" placeholder="ваш отзыв"></textarea>
                 </div>
                 <div class="feedback-form__stars">
                     <div class="feedback-form__stats-text">ваша оценка:</div>
@@ -501,6 +506,7 @@
         </div>
     </div>
 </section>
+
 		<section class="applications">
     <div class="container">
         <form action="" class="applications__form">
@@ -517,6 +523,7 @@
                             <li class="applications__select-item">Рыбалка на кита </li>
                         </ul>
                     </div>
+                    <div class="applications__hint">сначала заполните тур</div>
                 </div>
                 <div class="applications__inner">
                     <label class="calendar" for=""></label>
@@ -528,8 +535,13 @@
                 <div class="applications__inner">
                     <input type="text" placeholder="Ваше имя">
                 </div>
-                <div class="applications__inner">
-                    <input type="text" placeholder="+ 7 ___ ___ __ __">
+                <div class="applications__inner applications__inner--phone">
+                    <select class="js-choice form-control"  id="country">
+                        <option value="ru">RU +7</option>
+                        <option value="by">BY +375</option>
+                        <option value="kz">KZ +7</option>
+                      </select>
+                    <input type="tel" id="phone" placeholder="" class="form-control">
                 </div>
             </div>
             <!--  -->
@@ -671,6 +683,7 @@
                             <li class="modal__select-item">Рыбалка на кита </li>
                         </ul>
                     </div>
+                    <div class="modal__hint">сначала заполните тур</div>
                 </div>
                 <div class="modal__inner">
                     <label class="calendar" for=""></label>
@@ -682,8 +695,13 @@
                 <div class="modal__inner">
                     <input type="text" placeholder="Ваше имя">
                 </div>
-                <div class="modal__inner">
-                    <input type="text" placeholder="+ 7 ___ ___ __ __">
+                <div class="modal__inner modal__inner--phone">
+                    <select class="js-choice-two form-control-two"  id="country-two">
+                        <option value="ru">RU +7</option>
+                        <option value="by">BY +375</option>
+                        <option value="kz">KZ +7</option>
+                      </select>
+                    <input type="tel" id="phone-two" placeholder="" class="form-control-two">
                 </div>
             </div>
             <!--  -->
@@ -715,8 +733,13 @@
                 <div class="poap__inner">
                     <input type="text" placeholder="Ваше имя">
                 </div>
-                <div class="poap__inner">
-                    <input type="text" placeholder="+ 7 ___ ___ __ __">
+                <div class="poap__inner poap__inner--phone">
+                    <select class="js-choice-three form-control"  id="country-three">
+                        <option value="ru">RU +7</option>
+                        <option value="by">BY +375</option>
+                        <option value="kz">KZ +7</option>
+                      </select>
+                    <input type="tel" id="phone-three" placeholder="" class="form-control">
                 </div>
             </div>
             <!--  -->
@@ -786,14 +809,21 @@
     <img src="./img/icon/calling.svg" alt="">
 </a>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-
 <script src="./js/jquery-3.5.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 <script src="https://unpkg.com/@popperjs/core@2"></script>
 <script src="./js/swiper-bundle.js"></script>
 <script src="./js/air-datepicker.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/autosize.js/3.0.15/autosize.min.js'></script>
+<script src="./js/jquery.maskedinput.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+<script src="./js/choice.js"></script>
+<script>
+    autosize(document.querySelectorAll('textarea'));
+  </script>
 <script src="./js/Jq-script.js"></script>
 <script src="./js/main.js"></script>
+
 </body>
 
 </html>

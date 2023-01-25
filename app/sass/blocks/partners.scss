@@ -1,7 +1,7 @@
 .partners {
     margin-bottom: 13rem;
     .container {
-        width: 112.1rem;
+        width: 120rem;
     }
     .title {
         margin-bottom: 6.5rem;
@@ -32,6 +32,8 @@
 
         display: grid;
         grid-template-columns: repeat(4, 2fr);
+       
+        grid-column-gap: 9rem;
         flex-grow: 1;
     }
     
@@ -49,10 +51,6 @@
 
     &__logo {
         width: fit-content;
-        max-width: 28.8rem;
-        height: 9.4rem;
-        min-width: 21rem;
-        margin-right: 9.7rem;
         margin-bottom: 12.7rem;
         img {
             width: 100%;

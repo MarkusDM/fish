@@ -1,10 +1,12 @@
 .header {
-    position: relative;
+    position: absolute;
     top: 0;
     z-index: 5;
     margin-top: 5.2rem;
+    width: 100%;
     .container {
         width: 112.2rem;
+        
     }
 
   
@@ -26,9 +28,11 @@
         width: 29.1rem;
         height: 4rem;
         margin-right: 6.4rem;
-        img {
-            width: 100%;
-            height: 100%;
+     
+
+        svg {
+            transition: fill 0.25s;
+            fill:#1B1E1F;
         }
     }
 
@@ -45,10 +49,10 @@
         letter-spacing: 0.1em;
         text-transform: uppercase;
         display: inline-block;
-        color: #fff;
+     
         margin-right: 3.1rem;
         &:hover {
-            color: #1B1E1F;
+            color: #98989B;
                 transition: 0.2s
         }
     }
@@ -78,7 +82,7 @@
         line-height: 1.9rem;
         letter-spacing: 0.1em;
         text-transform: uppercase;
-        color: #fff;
+    
         border: none;
         margin-right: 6rem;
         padding-right: 1.2rem;
@@ -86,7 +90,7 @@
            
 
             .header__select-head {
-                color: #1B1E1F;
+                color: #98989B;
                 transition: 0.2s
             }
         }
@@ -101,7 +105,7 @@
         line-height: 1.9rem;
         letter-spacing: 0.1em;
         text-transform: uppercase;
-        color: #fff;
+      
         cursor: pointer;
        
     }
@@ -111,7 +115,7 @@
     &__select-head::after {
         width: 1rem;
         height: 1rem;
-        background: url("../img/icon/arrowdown.svg") no-repeat center / cover;
+        background: url(../img/icon/arrowdownblack.svg) no-repeat center / cover;;
         position: absolute;
         right: -0.5rem;
         transform: translateY(50%);
@@ -126,7 +130,7 @@
     }
     
     &__select-list {
-        border-top: 1.2px solid #fff;
+        border-top: 1.2px solid #1B1E1F;
         display: none;
         position: absolute;
         top: 100%;
@@ -144,7 +148,7 @@
         line-height: 1.9rem;
         letter-spacing: 0.1em;
         text-transform: uppercase;
-        color: #fff;
+        color: #1B1E1F;
         overscroll-behavior: contain;
     }
     
@@ -161,7 +165,7 @@
     }
     
     &__select-list &__select-item:hover {
-        color: #1B1E1F;
+        color: #98989B;
         transition: 0.2s
     }
 
@@ -187,7 +191,7 @@
         line-height: 1.9rem;
         letter-spacing: 0.1em;
         text-transform: uppercase;
-        color: #fff;
+    
         border: none;
         padding-right: 1.2rem;
         padding-bottom: 1rem;
@@ -195,7 +199,7 @@
            
 
             .header__select-head-two {
-                color: #1B1E1F;
+                color: #98989B;
                 transition: 0.2s
             }
         }
@@ -210,7 +214,7 @@
         line-height: 1.9rem;
         letter-spacing: 0.1em;
         text-transform: uppercase;
-        color: #fff;
+
         cursor: pointer;
        
     }
@@ -220,7 +224,7 @@
     &__select-head-two::after {
         width: 1rem;
         height: 1rem;
-        background: url("../img/icon/arrowdown.svg") no-repeat center / cover;
+        background: url(../img/icon/arrowdownblack.svg) no-repeat center / cover;;
         position: absolute;
         right: -0.5rem;
         transform: translateY(50%);
@@ -235,7 +239,7 @@
     }
     
     &__select-list-two {
-        border-top: 1.2px solid #fff;
+        border-top: 1.2px solid #1B1E1F;
         display: none;
         position: absolute;
         top: 100%;
@@ -253,7 +257,6 @@
         line-height: 1.9rem;
         letter-spacing: 0.1em;
         text-transform: uppercase;
-        color: #fff;
         overscroll-behavior: contain;
     }
     
@@ -271,7 +274,7 @@
     }
     
     &__select-list-two &__select-item-two:hover {
-        color: #1B1E1F;
+        color: #98989B;
         transition: 0.2s
     }
 
@@ -299,7 +302,7 @@
         position: relative;
         a {
           
-            border-bottom: 2px solid #FFFFFF;
+            border-bottom: 2px solid #1B1E1F;
             padding-bottom: 0.8rem;
         }
 
@@ -310,6 +313,7 @@
             .header__down {
                 transition: .2s ease-in;
                 opacity: 1;
+                
             }
 
       
@@ -318,7 +322,7 @@
         &::after {
             width: 1rem;
             height: 1rem;
-            background: url("../img/icon/arrowdown.svg") no-repeat center / cover;
+            background: url("../img/icon/arrowdownblack.svg") no-repeat center / cover;
             position: absolute;
             right: 0rem;
             content: '';
@@ -331,25 +335,7 @@
 
    
 
-    &__down {
-        background: #fff;
-        position: absolute;
-        top: 105%;
-        height: fit-content;
-        display: block;
-        left: 0;
-        opacity: 0;
-        transition: 0.2s;
-        padding-left: 2rem;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-        padding-right: 2rem;
-        min-width: 20rem;
-        a {
-            padding: 0;
-            border: none;
-        }
-    }
+
 
     &__item--mob {
         display: none;

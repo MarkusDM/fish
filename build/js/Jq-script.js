@@ -1,4 +1,3 @@
-
 $(document).ready(function () {
 
     $('.header__select').on('click', '.header__select-head', function () {
@@ -251,8 +250,7 @@ $(document).ready(function () {
     });
 
     new AirDatepicker('#airdatepicker', {
-        isMobile: true,
-        autoClose: true,
+        position: 'bottom center',
         dateFormat: 'dd.MM.yyyy',
         onRenderCell: function onRenderCell({date, cellType}) {
             if (cellType == 'day') {
@@ -283,12 +281,15 @@ $(document).ready(function () {
    
 
 
+Fancybox.bind('[data-fancybox="boats-image"]', {
+    caption: function (fancybox, carousel, slide) {
+      return (
+        `${slide.index + 1} / ${carousel.slides.length} <br />` + slide.caption
+      );
+    },
+  });
+
+  
 
 
-
-
-
-
-
-
-
+ 
