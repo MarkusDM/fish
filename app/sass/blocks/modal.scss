@@ -28,7 +28,7 @@
 
     &__form {
         position: relative;
-        width: 67rem;
+        width: 69rem;
         height: auto;
         background: #fff;
         padding-top: 5.8rem;
@@ -115,6 +115,17 @@
         font-size: 1.6rem;
         padding-top: 1rem;
         position: absolute;
+        display: none;
+    }
+
+
+    &__link {
+        font-size: 1.6rem;
+        display: block;
+        color:  #98989B;
+        margin-bottom: 3rem;
+        text-decoration: underline;
+        padding-left: 4rem;
     }
 
 
@@ -250,6 +261,10 @@
         line-height: 156%;
         letter-spacing: 0.02em;
         color: #98989B;
+    }
+
+    .checkbox-other a {
+        text-decoration: underline;
     }
     .checkbox-other span:before {
         content: "";

@@ -1,3 +1,5 @@
+
+
 $(document).ready(function () {
 
     $('.header__select').on('click', '.header__select-head', function () {
@@ -273,6 +275,9 @@ $(document).ready(function () {
         });
 
 
+      
+
+
 });
 
 
@@ -289,7 +294,35 @@ Fancybox.bind('[data-fancybox="boats-image"]', {
     },
   });
 
-  
+
+  $(document).ready(function () { 
+
+    $('.applications__inner--calendar').click( function () {
+        if( $('.applications__select-input').val().length === 0 ) {
+          $('.applications__hint').css('display', 'block');
+        } else {
+          $('.applications__hint').css('display', 'none');
+        }
+    });
+
+  });
+
+
+  $(document).ready(function () { 
+
+    $('.modal__inner--calendar').click( function () {
+        if( $('.modal__select-input').val().length === 0 ) {
+          $('.modal__hint').css('display', 'block');
+        } else {
+          $('.modal__hint').css('display', 'none');
+        }
+    });
+
+  });
+
+
+
+
 
 
  

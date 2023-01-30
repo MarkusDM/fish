@@ -32,6 +32,15 @@
         color: #FFFFFF;
     }
 
+    &__link {
+        font-size: 1.6rem;
+        display: block;
+        color: #98989b;
+        margin-bottom: 3rem;
+        text-decoration: underline;
+        padding-left: 4rem;
+    }
+
 
     
 
@@ -194,6 +203,7 @@
         padding-top: 1rem;
         color: #fff;
         position: absolute;
+        display: none;
     }
 
     &__btn {
@@ -241,6 +251,10 @@
         line-height: 156%;
         letter-spacing: 0.02em;
         color: #98989B;
+    }
+
+    .checkbox-other a {
+        text-decoration: underline;
     }
     .checkbox-other span:before {
         content: "";

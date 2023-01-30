@@ -1952,6 +1952,13 @@ input[type="number"] {
     text-transform: uppercase;
     margin-bottom: 5.3rem;
     color: #FFFFFF; }
+  .applications__link {
+    font-size: 1.6rem;
+    display: block;
+    color: #98989b;
+    margin-bottom: 3rem;
+    text-decoration: underline;
+    padding-left: 4rem; }
   .applications__block {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2079,7 +2086,8 @@ input[type="number"] {
     font-size: 1.6rem;
     padding-top: 1rem;
     color: #fff;
-    position: absolute; }
+    position: absolute;
+    display: none; }
   .applications__btn {
     background: none;
     border: none; }
@@ -2120,6 +2128,8 @@ input[type="number"] {
     line-height: 156%;
     letter-spacing: 0.02em;
     color: #98989B; }
+  .applications .checkbox-other a {
+    text-decoration: underline; }
   .applications .checkbox-other span:before {
     content: "";
     display: inline-block;
@@ -3530,7 +3540,7 @@ input[type="number"] {
     top: 2rem; }
   .modal__form {
     position: relative;
-    width: 67rem;
+    width: 69rem;
     height: auto;
     background: #fff;
     padding-top: 5.8rem;
@@ -3598,7 +3608,15 @@ input[type="number"] {
   .modal__hint {
     font-size: 1.6rem;
     padding-top: 1rem;
-    position: absolute; }
+    position: absolute;
+    display: none; }
+  .modal__link {
+    font-size: 1.6rem;
+    display: block;
+    color: #98989B;
+    margin-bottom: 3rem;
+    text-decoration: underline;
+    padding-left: 4rem; }
   .modal__select {
     position: relative;
     display: block;
@@ -3708,6 +3726,8 @@ input[type="number"] {
     line-height: 156%;
     letter-spacing: 0.02em;
     color: #98989B; }
+  .modal .checkbox-other a {
+    text-decoration: underline; }
   .modal .checkbox-other span:before {
     content: "";
     display: inline-block;
@@ -4433,6 +4453,8 @@ input[type="number"] {
     letter-spacing: 0.02em;
     color: rgba(255, 255, 255, 0.38);
     width: 40rem; }
+  .footer .checkbox-other {
+    text-decoration: underline; }
   .footer .checkbox-other span:before {
     content: "";
     display: inline-block;
@@ -4907,16 +4929,15 @@ input[type="number"] {
   .main {
     padding-bottom: 0;
     margin-bottom: 6rem;
+    background-image: none !important;
+    background: none;
     min-height: 100vh;
-    background-image: none; }
+    min-height: -webkit-fill-available; }
     .main__bg-mobile {
       display: block;
-      position: absolute;
-      top: 0;
       width: 100%;
-      z-index: -1;
-      min-height: 100%;
-      height: 100vh; }
+      min-height: 100vh;
+      min-height: -webkit-fill-available; }
       .main__bg-mobile::after {
         position: absolute;
         content: '';
@@ -4954,10 +4975,7 @@ input[type="number"] {
     .main__logo {
       display: none; }
     .main__bg {
-      height: auto;
-      background-image: url(../img/main/mainbgmob.png);
-      height: 154.4rem;
-      background-size: 100% 100%; }
+      display: none; }
     .main__feedback {
       display: none; }
     .main__title-desk {
@@ -4966,6 +4984,7 @@ input[type="number"] {
       display: block; }
     .main__title-mob {
       font-family: 'Akrobat',sans-serif;
+      display: none;
       font-style: normal;
       font-weight: 900;
       font-size: 12rem;
@@ -4975,7 +4994,8 @@ input[type="number"] {
       margin-bottom: 6.8rem; }
     .main__text {
       width: 100%;
-      margin-bottom: 3.4rem; }
+      margin-bottom: 3.4rem;
+      display: none; }
       .main__text strong {
         font-weight: 600;
         font-size: 2.8rem;
@@ -5353,7 +5373,24 @@ input[type="number"] {
         width: 41rem;
         min-width: 41rem;
         height: 38rem;
-        margin-bottom: 4.6rem; }
+        margin-bottom: 12.1rem; }
+      .present .present-card__image--mobone {
+        width: 62rem;
+        height: 49rem;
+        position: relative;
+        left: -8rem; }
+      .present .present-card__image--mobtwo {
+        width: 45rem;
+        height: 28rem;
+        position: relative;
+        top: 6rem;
+        left: 1.6rem; }
+      .present .present-card__image--mobthree {
+        width: 50rem;
+        height: 37rem;
+        position: relative;
+        left: -1rem;
+        top: 2rem; }
       .present .present-card__text {
         padding-top: 4.8rem;
         text-align: center; }
@@ -5664,11 +5701,15 @@ input[type="number"] {
       padding: 0; }
     .applications__form {
       width: 100%;
-      height: 106rem;
+      height: 110rem;
       padding: 0 4rem;
       padding-top: 5.7rem;
       -webkit-backdrop-filter: blur(13px);
               backdrop-filter: blur(13px); }
+    .applications__link {
+      font-size: 3rem;
+      padding-left: 0;
+      color: #fff; }
     .applications__form-title {
       font-family: 'Akrobat',sans-serif;
       font-style: normal;
@@ -5797,7 +5838,7 @@ input[type="number"] {
     .applications__btn {
       background: none;
       border: none;
-      margin-left: 2rem;
+      margin-left: 0rem;
       margin-top: 6rem; }
       .applications__btn span {
         font-style: normal;
@@ -5810,14 +5851,18 @@ input[type="number"] {
         border-bottom: 2px solid #fff; }
     .applications__text {
       display: block;
-      padding: 0 3rem;
+      padding: 0rem;
       font-weight: 400;
       font-size: 2.4rem;
       line-height: 133%;
       letter-spacing: 0.02em;
       color: #fff;
       display: block;
-      margin-top: 6rem; }
+      margin-top: 6rem;
+      padding-right: 8rem; }
+      .applications__text a {
+        text-decoration: underline;
+        padding-left: 0.1rem; }
     .applications .checkbox-other {
       display: block;
       margin: 0 0 5rem 0;
@@ -6073,27 +6118,24 @@ input[type="number"] {
     .partners__bullets {
       display: none; }
     .partners__content-mob {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: repeat(2, 2fr);
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
+      grid-column-gap: 14rem;
       padding: 0 4rem; }
     .partners__content {
       display: none; }
     .partners__swiper {
       margin-bottom: 2.8rem; }
     .partners__logo {
-      max-width: 38rem;
-      min-width: 21rem;
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
       height: 19rem;
       margin-right: 0;
+      min-width: 33rem;
       margin-bottom: 6.4rem; }
     .partners__logo:nth-last-child(-n+4) {
       margin-bottom: 6.4rem; }
@@ -6320,6 +6362,10 @@ input[type="number"] {
     .modal__container {
       padding-left: 4rem;
       padding-right: 4rem; }
+    .modal__link {
+      font-size: 3rem;
+      padding-left: 0;
+      color: #C9C8D0; }
     .modal__close {
       width: 5rem;
       height: 5rem;
@@ -6459,7 +6505,7 @@ input[type="number"] {
     .modal__btn {
       background: none;
       border: none;
-      margin-left: 2rem;
+      margin-left: 0rem;
       margin-top: 6rem; }
       .modal__btn span {
         font-style: normal;
@@ -6472,12 +6518,15 @@ input[type="number"] {
         border-bottom: 2px solid #fff; }
     .modal__text {
       display: block;
-      padding-left: 2rem;
+      padding-left: 0rem;
       font-weight: 400;
       font-size: 2.4rem;
       line-height: 133%;
+      padding-right: 9rem;
       display: block;
       margin-top: 6rem; }
+      .modal__text a {
+        text-decoration: underline; }
     .modal .checkbox-other {
       display: block;
       margin: 0 0 5rem 0;
@@ -6677,7 +6726,10 @@ input[type="number"] {
     line-height: 133%;
     padding-top: 0;
     display: block;
-    margin-top: 6rem; }
+    margin-top: 6rem;
+    padding-right: 9rem; }
+    .poap__text a {
+      text-decoration: underline; }
   .poap .choices {
     padding-bottom: 0;
     position: relative;
@@ -6814,6 +6866,15 @@ input[type="number"] {
     .our-tours .container {
       width: 100%;
       padding: 0; }
+    .our-tours__wrapper {
+      position: relative;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
     .our-tours__mobil-text {
       display: block;
       font-weight: 400;
@@ -6840,7 +6901,10 @@ input[type="number"] {
       position: relative;
       width: 100%;
       padding: 0 4rem;
-      background: none; }
+      background: none;
+      height: -webkit-fit-content;
+      height: -moz-fit-content;
+      height: fit-content; }
     .our-tours__text {
       width: 100%; }
     .our-tours__feedback {
@@ -6892,9 +6956,9 @@ input[type="number"] {
         font-size: 2.4rem;
         line-height: 2.8rem;
         letter-spacing: 0.02em; }
-    .our-tours #map {
+    .our-tours #map-tours {
       height: 76.5rem; }
-      .our-tours #map img {
+      .our-tours #map-tours img {
         width: 100%;
         height: 100%;
         -o-object-fit: cover;
@@ -7253,7 +7317,8 @@ input[type="number"] {
     .feedback-form .choices .is-open .is-focused {
       border: none; }
   .map {
-    padding-top: 16rem; }
+    padding-top: 16rem;
+    margin-bottom: 10rem; }
     .map__block {
       padding-left: 0;
       background: none;

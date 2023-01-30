@@ -269,6 +269,10 @@
         color: rgba(255, 255, 255, 0.38);
         width: 40rem;
     }
+
+    .checkbox-other {
+        text-decoration: underline;
+    }
     .checkbox-other span:before {
         content: "";
         display: inline-block;
