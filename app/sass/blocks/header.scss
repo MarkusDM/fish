@@ -2,6 +2,7 @@
     position: absolute;
     top: 0;
     z-index: 5;
+
     margin-top: 5.2rem;
     width: 100%;
     .container {
@@ -52,7 +53,7 @@
      
         margin-right: 3.1rem;
         &:hover {
-            color: #98989B;
+            color: #BF2B2B;
                 transition: 0.2s
         }
     }
@@ -90,7 +91,7 @@
            
 
             .header__select-head {
-                color: #98989B;
+                color: #BF2B2B;
                 transition: 0.2s
             }
         }
@@ -165,7 +166,7 @@
     }
     
     &__select-list &__select-item:hover {
-        color: #98989B;
+        color: #BF2B2B;
         transition: 0.2s
     }
 
@@ -199,7 +200,7 @@
            
 
             .header__select-head-two {
-                color: #98989B;
+                color: #BF2B2B;
                 transition: 0.2s
             }
         }
@@ -274,7 +275,7 @@
     }
     
     &__select-list-two &__select-item-two:hover {
-        color: #98989B;
+        color: #BF2B2B;
         transition: 0.2s
     }
 

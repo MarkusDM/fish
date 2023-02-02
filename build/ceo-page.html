@@ -656,6 +656,11 @@
             <img src="./img/differences/differences1.png" alt="">
     
         </div>
+
+        <div class="differences__image differences__image--mob">
+            <img src="./img/differences/differences2.png" alt="">
+    
+        </div>
         <div class="differences__text content-block">
             <p>Вы решили посетить наш замечательный край и побывать на самой темпераментной рыбалке в мире. Во всяком случае, так говорят наши именитые гости со всего мира. Вы, конечно, везде бывали: вылавливали всевозможных монстров во всех уголках планеты, знаете, что такое первозданная природа, знакомы с дикой флорой и фауной и бывали в различных ситуациях, но мы хотим, чтобы Вы были готовы к особенностям наших мест </p>
             <p>Рыбалка на Камчатке – это не поездка в Сочи (хотя даже здесь важно внимательно подойти к вопросу), это сложный маршрут повышенной опасности в диких условиях, требующий проработки на всех этапах. Опытные путешественники, которые сталкивались с различными рода ситуациями знают, что посредственная техника, не опытный гид, не отработанный быт, да все что угодно, если это делают дилетанты, сделает Ваш отдых испорченным. </p>
@@ -768,7 +773,11 @@
                             <li class="applications__select-item">Рыбалка на кита </li>
                         </ul>
                     </div>
-                    <div class="applications__hint">сначала заполните тур</div>
+                    <div class="applications__hint">
+                        <div class="applications__hint-content">
+                          <img src="./img/icon/icont.png" alt="">  <span>сначала заполните тур</span>
+                          </div>    
+                    </div>
                 </div>
                 <div class="applications__inner applications__inner--calendar">
                     <label class="calendar" for=""></label>
@@ -780,25 +789,22 @@
                 <div class="applications__inner">
                     <input type="text" placeholder="Ваше имя">
                 </div>
-                <div class="applications__inner applications__inner--phone">
-                    <select class="js-choice form-control"  id="country">
-                        <option value="ru">RU +7</option>
-                        <option value="by">BY +375</option>
-                        <option value="kz">KZ +7</option>
-                      </select>
-                    <input type="tel" id="phone" placeholder="" class="form-control">
+                <div class="applications__inner">
+                    <input type="tel"  placeholder="телефон" class="form-control">
+                    <div class="applications__inner-prompt">формат +7 496 335 85 44</div>
                 </div>
+
             </div>
             <!--  -->
             <label class="checkbox-other">
                 <input type="checkbox" >
-                <span> Нажимая кнопку “оставить заявку”, вы даёте согласие<br> на обработку персональных данных <a href="">политика конфиденциальности</a></span>
+                <span> Нажимая кнопку “оставить заявку”, вы даёте согласие<br> на <a href="">обработку персональных данных</a></span>
               </label>
             <button class="applications__btn">
                 <span>Оставить заявку</span>
             </button>
             <div class="applications__text">
-                Нажимая кнопку “оставить заявку”, вы даёте согласие на обработку персональных данных <a href="">политика конфиденциальности</a>
+                Нажимая кнопку “оставить заявку”, вы даёте согласие на <a href="">обработку персональных данных </a>
             </div>
         </form>
     </div>
@@ -1207,9 +1213,11 @@
                             <li class="modal__select-item">Рыбалка на кита </li>
                         </ul>
                     </div>
-                    <div class="modal__hint">сначала заполните тур</div>
+                    <div class="modal__hint"><div class="modal__hint-content">
+                        <img src="./img/icon/icont.png" alt="">  <span>сначала заполните тур</span>
+                    </div></div>
                 </div>
-                <div class="modal__inner">
+                <div class="modal__inner modal__inner--calendar">
                     <label class="calendar" for=""></label>
                     <input type="text"  id="airdatepicker" placeholder="дата"  >
                 </div>
@@ -1219,13 +1227,10 @@
                 <div class="modal__inner">
                     <input type="text" placeholder="Ваше имя">
                 </div>
-                <div class="modal__inner modal__inner--phone">
-                    <select class="js-choice-two form-control-two"  id="country-two">
-                        <option value="ru">RU +7</option>
-                        <option value="by">BY +375</option>
-                        <option value="kz">KZ +7</option>
-                      </select>
-                    <input type="tel" id="phone-two" placeholder="" class="form-control-two">
+                <div class="modal__inner ">
+                
+                    <input type="tel"  placeholder="телефон" class="form-control">
+                    <div class="modal__inner-prompt">формат +7 496 335 85 44</div>
                 </div>
             </div>
             <!--  -->
@@ -1257,13 +1262,9 @@
                 <div class="poap__inner">
                     <input type="text" placeholder="Ваше имя">
                 </div>
-                <div class="poap__inner poap__inner--phone">
-                    <select class="js-choice-three form-control"  id="country-three">
-                        <option value="ru">RU +7</option>
-                        <option value="by">BY +375</option>
-                        <option value="kz">KZ +7</option>
-                      </select>
-                    <input type="tel" id="phone-three" placeholder="" class="form-control">
+                <div class="poap__inner ">
+                    <input type="tel"  placeholder="телефон" class="form-control">
+                    <div class="poap__inner-prompt">формат +7 496 335 85 44</div>
                 </div>
             </div>
             <!--  -->

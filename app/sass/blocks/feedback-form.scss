@@ -1,6 +1,7 @@
 .feedback-form {
     padding-top: 15.3rem;
-    padding-bottom: 12.6rem;
+    padding-bottom: 15.3rem;
+    background: #fff;
     .container {
         width: 113.8rem;
     }
@@ -58,6 +59,13 @@
         color: #1B1E1F;
     }
 
+    &__inner-prompt {
+        font-size: 1.4rem;
+        color: #C9C8D0;
+        padding-top: 0.2rem;
+        position: absolute;
+    }
+
    
 
     &__block {
@@ -99,7 +107,7 @@
                 border: none;
                 padding-bottom: 1.1rem;
                 border-bottom: 1px solid #C9C8D0;
-                width: 56.3rem;
+                width: 54.3rem;
                 overflow: hidden;
                 box-sizing: border-box;
                 font-style: normal;

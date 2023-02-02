@@ -110,12 +110,60 @@
     &__block:last-child{
         margin-bottom: 0rem;
     }
+    &__inner {
+        position: relative;
+    }
 
     &__hint {
-        font-size: 1.6rem;
-        padding-top: 1rem;
-        position: absolute;
+        font-size: 1.2rem;
         display: none;
+        padding-top: 1rem;
+        color: #1B1E1F;
+        position: absolute;
+        background: #fff;
+        padding: 0.8rem;
+        border-radius: 0rem;
+        bottom: -7rem;
+        z-index: 3;
+       
+        border: 1px solid #000;
+        &::before {
+            content: "";
+            position: absolute;
+            background-color: white;
+            width: 1.5rem;
+            height: 1.5rem;
+            top: -0.8rem;
+            left: 5rem;
+            display: inline-block;
+            border: 1px solid #000;
+            border-top-color: white;
+            border-left-color: white;
+            transform: rotate(226deg);
+            
+        }
+        
+    }
+
+
+    &__hint-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        img {
+            width: 4rem;
+            height: 4rem;
+            margin-right: 1rem;
+
+            
+        }
+    }
+
+    &__inner-prompt {
+        font-size: 1.4rem;
+        color: #C9C8D0;
+        padding-top: 0.2rem;
     }
 
 
@@ -165,7 +213,7 @@
     
     &__select-head::after {
         width: 1rem;
-        height: 1rem;
+        height: 1.2rem;
         background: url("../img/icon/arrowdownblack.svg") no-repeat center / cover;
         position: absolute;
         right: 0rem;
@@ -173,7 +221,7 @@
         content: '';
         display: block;
         transition: .2s ease-in;
-        top: 0rem;
+        top: -0.3rem;
     }
     
     &__select-head.open::after {
@@ -210,6 +258,7 @@
         padding: 1rem 1.5rem;
         cursor: pointer;
         list-style-type: none;
+        padding-left: 0;
     }
     
     &__select-list &__select-item:hover {
@@ -309,6 +358,10 @@
     .checkbox-other input[type=checkbox]:disabled + span:before {
         filter: grayscale(100%);
         opacity: 0.6;
+    }
+
+    .choices__item.choices__item--selectable {
+        padding-top: 0.8rem;
     }
 
 

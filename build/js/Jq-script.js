@@ -205,9 +205,17 @@ $(document).ready(function () {
     });
 
 
-    $('.article-card__btn').click(function () {
-        $(this).siblings('.article-card__text').toggleClass('article-card__text--active');
-        $('.article-card__btn').not(this).parent('.article-card__text').removeClass('article-card__text--active');
+ 
+
+
+    $(".article-card__wrap").each(function () {
+        let more = $(this).find(".article-card__btn");
+        let hide = $(this).find(".article-card__hide-content");
+        hide.hide();
+        more.click(function () {
+            hide.slideToggle();
+            more.text(more.text() == "Скрыть" ? "Подробнее" : "Скрыть");
+        });
     });
 
 
@@ -275,7 +283,9 @@ $(document).ready(function () {
         });
 
 
-      
+        $('.form-control').on('input', function() {
+            $(this).val($(this).val().replace(/[A-Za-zА-Яа-яЁё]/, ''))
+        });
 
 
 });
@@ -299,26 +309,48 @@ Fancybox.bind('[data-fancybox="boats-image"]', {
 
     $('.applications__inner--calendar').click( function () {
         if( $('.applications__select-input').val().length === 0 ) {
-          $('.applications__hint').css('display', 'block');
+            $(".applications__hint").show('slow');
+             setTimeout(function() { $(".applications__hint").css('display', 'block').hide('slow'); }, 2000);
         } else {
           $('.applications__hint').css('display', 'none');
         }
     });
 
-  });
-
-
-  $(document).ready(function () { 
 
     $('.modal__inner--calendar').click( function () {
         if( $('.modal__select-input').val().length === 0 ) {
-          $('.modal__hint').css('display', 'block');
+            $(".modal__hint").show('slow');
+            setTimeout(function() { $(".modal__hint").css('display', 'block').hide('slow'); }, 2000);
         } else {
           $('.modal__hint').css('display', 'none');
         }
     });
 
+  
+
+
+
+
+
+
+
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop(); 
+        if (scroll > 600) {   
+           $("#header").removeClass("header--white");  
+        } else {
+           $("#header").addClass("header--white");
+        }
+    });
+
+  
+
+     
+
   });
+
+
+ 
 
 
 

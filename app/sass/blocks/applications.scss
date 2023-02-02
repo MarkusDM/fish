@@ -11,7 +11,7 @@
     }
 
     &__form {
-        width: 75rem;
+        width: 66rem;
         height: 53.2rem;
         background: rgba(255, 255, 255, 0.06);
         backdrop-filter: blur(25px);
@@ -44,7 +44,9 @@
 
     
 
-   
+    &__inner {
+        position: relative;
+    }
 
     &__block {
         display: flex;
@@ -56,7 +58,7 @@
                 border: none;
                 padding-bottom: 1.1rem;
                 border-bottom: 1px solid #C9C8D0;
-                width: 28.3rem;
+                width: 24.3rem;
                 font-style: normal;
                 font-weight: 600;
                 font-size: 1.6rem;
@@ -121,7 +123,7 @@
         border: none;
         padding-bottom: 1.1rem;
         border-bottom: 1px solid #C9C8D0;
-        width: 28.3rem;
+        width: 24.3rem;
         
     }
     
@@ -141,16 +143,16 @@
 
     
     &__select-head::after {
-        width: 1rem;
-        height: 1rem;
-        background: url("../img/icon/arrowdown.svg") no-repeat center / cover;
+        width: 1.5rem;
+        height: 1.2rem;
+        background: url("../img/icon/arrowdown.svg") no-repeat center / 100%;
         position: absolute;
         right: 0rem;
         transform: translateY(50%);
         content: '';
         display: block;
         transition: .2s ease-in;
-        top: 0rem;
+        top: -0.3rem;
     }
     
     &__select-head.open::after {
@@ -166,7 +168,7 @@
         right: 0;
         width: 100%;
         background-color: hsla(0, 0%, 11%, .95);
-        max-height: 20.5rem;
+        max-height: fit-content;
         overflow-x: hidden;
         overflow-y: auto;
         z-index: 2;
@@ -199,11 +201,51 @@
     }
 
     &__hint {
-        font-size: 1.6rem;
-        padding-top: 1rem;
-        color: #fff;
-        position: absolute;
+        font-size: 1.2rem;
         display: none;
+        padding-top: 1rem;
+        color: #1B1E1F;
+        position: absolute;
+        background: #fff;
+        padding: 0.8rem;
+        border-radius: 0rem;
+        bottom: -7rem;
+        z-index: 3;
+        left: 3rem;
+        box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+        &::before {
+            position: absolute;
+            content:'';
+            top: -3rem;
+            left: 2rem;
+            display: inline-block;
+            border: 1.5rem solid transparent;
+            border-bottom: 1.5rem solid #fff;
+            
+        }
+    }
+
+
+
+
+    &__hint-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        img {
+            width: 4rem;
+            height: 4rem;
+            margin-right: 1rem;
+        }
+    }
+
+
+    &__inner-prompt {
+        font-size: 1.4rem;
+        color: #C9C8D0;
+        padding-top: 0.2rem;
+        position: absolute;
     }
 
     &__btn {
@@ -304,94 +346,7 @@
 
 
     
-
+   
     
-
-    .choices {
-        padding-bottom: 0;
-        position: relative;
-        width: 8.3rem;
-        border-bottom: 1px solid #C9C8D0;
-
-        &__inner {
-            padding: 0;
-            background: none;
-            border: none;
-            font-weight: 700;
-            font-size: 1.6rem;
-            line-height: 1.9rem;
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
-            color: #fff;
-        }
-
-        
-    }
-
-    .choices__inner {}
-
-
-    
-
-    .hoices__input .choices__input--cloned  {
-        display: none;
-    }
-
-    .choices__item {
-        padding-bottom: 1rem;
-        padding-top: 1rem;
-       
-    }
-
-    .choices__item--choice {
-        cursor: pointer;
-        &:hover {
-            background-color: hsla(0, 0%, 20%, .95);
-            transition: 0.2s
-            
-        }
-    }
-
-
-    .choices__list--dropdown {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        width: 100%;
-        background-color: hsla(0, 0%, 11%, .95);
-        max-height: 20.5rem;
-        overflow-x: hidden;
-        overflow-y: auto;
-        z-index: 2;
-        margin: 0;
-        padding: 0;
-        font-weight: 700;
-        font-size: 1.6rem;
-        line-height: 1.9rem;
-        letter-spacing: 0.1em;
-        text-transform: uppercase;
-        color: #fff;
-        overscroll-behavior: contain;
-    }
-
-    .is-active {
-        display: block;
-    }
-  
-
-    &__inner--phone {
-        display: flex;
-        flex-direction: initial;
-        padding-top: 0.1rem!important;
-        input {
-            width: 20rem!important;
-        }
-    }
-
-    .choices .is-open .is-focused {
-        border: none;
-    }
 
 }

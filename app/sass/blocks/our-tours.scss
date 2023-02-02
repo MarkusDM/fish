@@ -5,7 +5,7 @@
     }
 
     #map {
-        height: 105rem;
+        height: 102.5rem;
         width: 100%;
     }
 
@@ -108,9 +108,13 @@
     }
 
     #map-tours {
-        height: 104.5rem;
+        height: 102.5rem;
         width: 100%;
         
+    }
+
+    #map-tours-mob {
+        display: none;
     }
 
     &__mobil-text {

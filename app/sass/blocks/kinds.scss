@@ -89,19 +89,22 @@
         line-height:  156% ;
         letter-spacing: 0.02em;
         color: #98989B;
-        overflow: hidden;
-        margin-bottom: 1rem;
-        max-height: 8rem;
-        transition: max-height 0.15s cubic-bezier(0, 0, 0, 0);    
+        margin-bottom: 1rem; 
+        
     }
 
-    &__text--active {
-        max-height: 1000rem;
-        transition: max-height 0.15s cubic-bezier(0, 1, 0, 1);    
-        overflow: initial
-       
-       
+    &__hide-content {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height:  156% ;
+        letter-spacing: 0.02em;
+        color: #98989B;
+        margin-bottom: 1rem; 
+        display: none;
     }
+
+ 
 
   
 

@@ -4,12 +4,13 @@
 const boatsSwiper = new Swiper('.boats__swiper', {
   wrapperClass: 'boats__swiper-wrapper',
   slideClass: 'boats__slide',
-  speed: 500,
-  initialSlide: 2.5,
-  slidesPerView: 1.6,
-  slidesPerGroup: 3,
-  loop: true,
  
+  speed: 500,
+  slidesPerView: 2,
+  centeredSlides: true,
+  slidesPerGroup: 2,
+  loop: true,
+
   spaceBetween: 20,
   navigation: {
     prevEl: '.boats__prev',
@@ -55,10 +56,10 @@ const boatsTwoSwiper = new Swiper('.boats__swiper-two', {
 
   wrapperClass: 'boats__swiper-wrapper-two',
   slideClass: 'boats__slide-two',
-  speed: 600,
-  initialSlide: 0,
+  speed: 500,
+
   slidesPerView: 2,
-  slidesPerGroup: 3,
+  slidesPerGroup: 2,
   loop: true,
  
   spaceBetween: 20,
@@ -168,15 +169,13 @@ const partnersSwiperTwo = new Swiper('.partners__swiper-mob', {
 
 
 const relaxationSwiper = new Swiper('.relaxation__swiper', {
-  slidesPerView: 'auto',
   wrapperClass: 'relaxation__swiper-wrapper',
   slideClass: 'relaxation__slide',
   speed: 500,
-  initialSlide: 2.5,
   slidesPerView: 2,
-  slidesPerGroup: 3,
+  centeredSlides: true,
+  slidesPerGroup: 2,
   loop: true,
- 
   spaceBetween: 20,
   navigation: {
     prevEl: '.relaxation__prev',
@@ -220,15 +219,13 @@ const relaxationSwiper = new Swiper('.relaxation__swiper', {
 
 });
 const relaxationTwoSwiper = new Swiper('.relaxation__swiper-two', {
-  slidesPerView: 'auto',
   wrapperClass: 'relaxation__swiper-wrapper-two',
   slideClass: 'relaxation__slide-two',
-  speed: 600,
-  initialSlide: 0,
+  speed: 500,
   slidesPerView: 2,
-  slidesPerGroup: 3,
-  spaceBetween: 20,
+  slidesPerGroup: 2,
   loop: true,
+  spaceBetween: 20,
   navigation: {
     prevEl: '.relaxation__prev',
     nextEl: '.relaxation__next',
@@ -284,7 +281,7 @@ const feedbackSwiper = new Swiper('.feedback__swiper', {
   wrapperClass: 'feedback__swiper-wrapper',
   slideClass: 'feedback__slide',
   speed: 500,
-
+  allowTouchMove:false,
   navigation: {
     prevEl: '.feedback__prev',
     nextEl: '.feedback__next',
@@ -373,41 +370,7 @@ const toursSwiper = new Swiper('.tours__swiper', {
 
 
 
-// ymaps.ready(init);
 
-// function init () {
-//     var myMap = new ymaps.Map('map-tours', {
-//             center: [53.024263, 158.643504],
-//             zoom: 10
-//         }, {
-//             searchControlProvider: 'yandex#search'
-//         }),
-//         objectManager = new ymaps.ObjectManager({
-//             // Чтобы метки начали кластеризоваться, выставляем опцию.
-//             clusterize: true,
-//             // ObjectManager принимает те же опции, что и кластеризатор.
-//             gridSize: 32,
-//             clusterDisableClickZoom: true,
-//             iconLayout: 'default#image',
-//             iconImageClipRect: [[0,0], [26, 46]],
-//             iconImageHref: './img/paplavok.svg',
-//             iconImageSize: [15, 27],
-//             iconImageOffset: [-15, -27]
-//         });
-
-//     // Чтобы задать опции одиночным объектам и кластерам,
-//     // обратимся к дочерним коллекциям ObjectManager.
-//     objectManager.objects.options.set(objectManager.iconLayout);
-//     objectManager.clusters.options.set(objectManager.iconLayout);
-//     myMap.geoObjects.add(objectManager);
-
-//     $.ajax({
-//         url: "data.json"
-//     }).done(function(data) {
-//         objectManager.add(data);
-//     });
-
-// }
 
 
 
@@ -440,6 +403,43 @@ ymaps.ready(function(){
 
   };
 });
+
+
+ymaps.ready(function(){
+  if ($('div').is('#map-tours-mob')) {
+    var i;
+    var pl;
+    var coords = [[53.037514, 158.372897],[52.814409, 156.307943],[53.139993, 158.377810],[53.000537, 158.652654]];
+    
+    var myMap = new ymaps.Map("map-tours-mob", {
+      center: [53.089071, 158.356106],
+      zoom: 9,
+      controls: ['zoomControl']
+
+      
+    });
+    
+    for (i = 0; i < coords.length; ++i) {
+      pl = new ymaps.Placemark(coords[i], {}, {
+          iconLayout: 'default#image',
+          iconImageHref: 'img/icon/paplavok.svg',
+          iconImageSize: [50, 50],
+          iconImageOffset: [-5, -38]
+      });
+      myMap.geoObjects.add(pl);
+      console.log(coords[i]);
+     
+    }
+
+  };
+});
+
+
+
+
+
+
+
 
 
 Fancybox.bind('[data-fancybox="relax-image"]', {
