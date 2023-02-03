@@ -35,6 +35,10 @@
         margin-bottom: 3rem;
     }
 
+    &__slide {
+        height: fit-content!important;
+    }
+
     &__title {
         display: flex;
         justify-content: space-between;
